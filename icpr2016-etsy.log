@@ -1,0 +1,970 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/MacPorts 2015_7) (preloaded format=pdflatex 2015.10.22)  24 MAR 2016 08:23
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**icpr2016-etsy.tex
+(./icpr2016-etsy.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 44 languages loaded.
+(./IEEEtran.cls
+Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
+istensen
+-- Based on V1.7a by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen102
+\@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpcountA=\count79
+\@IEEEtrantmpcountB=\count80
+\@IEEEtrantmptoksA=\toks14
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 373.
+
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 210mm x 297mm (a4) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen104
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen105
+\CLASSINFOnormalsizeunitybaselineskip=\dimen106
+\IEEEnormaljot=\dimen107
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+\IEEEilabelindentA=\dimen108
+\IEEEilabelindentB=\dimen109
+\IEEEilabelindent=\dimen110
+\IEEEelabelindent=\dimen111
+\IEEEdlabelindent=\dimen112
+\IEEElabelindent=\dimen113
+\IEEEiednormlabelsep=\dimen114
+\IEEEiedmathlabelsep=\dimen115
+\IEEEiedtopsep=\skip41
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@IEEEsubequation=\count85
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count86
+\c@table=\count87
+\@IEEEeqnnumcols=\count88
+\@IEEEeqncolcnt=\count89
+\@IEEEtmpitemindent=\dimen116
+\c@IEEEbiography=\count90
+\@IEEEtranrubishbin=\box26
+) (/opt/local/share/texmf-texlive/tex/latex/preprint/fullpage.sty
+Package: fullpage 1999/02/23 1.1 (PWD)
+\FP@margin=\skip44
+)
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen117
+))
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen118
+)
+(/opt/local/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen119
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks16
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks17
+\eqnshift@=\dimen120
+\alignsep@=\dimen121
+\tagshift@=\dimen122
+\tagwidth@=\dimen123
+\totwidth@=\dimen124
+\lineht@=\dimen125
+\@envbody=\toks18
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/opt/local/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count103
+))
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen128
+\epsfysize=\dimen129
+)
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/opt/local/share/texmf-texlive/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count104
+\ST@wd=\dimen130
+\ST@rightskip=\skip48
+\ST@leftskip=\skip49
+\ST@parfillskip=\skip50
+\ST@pageleft=\dimen131
+\ST@headht=\dimen132
+\ST@tailht=\dimen133
+\ST@pagesofar=\dimen134
+\ST@pboxht=\dimen135
+\ST@lineht=\dimen136
+\ST@stretchht=\dimen137
+\ST@prevht=\dimen138
+\ST@toadd=\dimen139
+\ST@dimen=\dimen140
+\ST@pbox=\box29
+)
+(/opt/local/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip51
+\subfigcapskip=\skip52
+\subfigcaptopadj=\dimen141
+\subfigbottomskip=\skip53
+\subfigcapmargin=\dimen142
+\subfiglabelskip=\skip54
+\c@subfigure=\count105
+\c@lofdepth=\count106
+\c@subtable=\count107
+\c@lotdepth=\count108
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/opt/local/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip55
+\subfig@bottom=\skip56
+)
+(/opt/local/share/texmf-texlive/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen143
+)
+(/opt/local/share/texmf-texlive/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks21
+\footnotemargin=\dimen144
+\c@pp@next@reset=\count109
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
+(/opt/local/share/texmf-texlive/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/opt/local/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+)
+(/opt/local/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/opt/local/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 105.
+
+(/opt/local/share/texmf-texlive/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+))
+(/opt/local/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
+
+(/opt/local/share/texmf-texlive/tex/latex/base/utf8.def
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/opt/local/share/texmf-texlive/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/opt/local/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/opt/local/share/texmf-texlive/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/opt/local/share/texmf-texlive/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip57
+\@affilsep=\skip58
+\c@Maxaffil=\count110
+\c@authors=\count111
+\c@affil=\count112
+)
+(/opt/local/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/opt/local/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen145
+\captionmargin@=\dimen146
+\captionwidth=\dimen147
+\caption@tempdima=\dimen148
+\caption@indent=\dimen149
+\caption@parindent=\dimen150
+\caption@hangindent=\dimen151
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize {\centering \normalfont \footnotesize #1.\qquad \scshap
+e #2\par }\@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox 
+\@tempboxa \hbox {\normalfont \footnotesize {#1.}~~ #2}\ifdim \wd \@tempboxa >\
+hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}~~ }\parbox [t]{
+\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLA
+SSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \h
+fil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi
+ \fi \fi .
+\c@ContinuedFloat=\count113
+Package caption Info: subfigure package is loaded.
+Package caption Info: supertabular package is loaded.
+) (/opt/local/share/texmf-texlive/tex/latex/subfloat/subfloat.sty
+Package: subfloat 2003/08/21 version 2.14
+
+Package `subfloat', Version 2.14 of 2003/08/21.
+
+Package subfloat Warning: Numbers of floats not counted:
+(subfloat)                If you use one of the counters subfloatfiguremax or
+(subfloat)                subfloattablemax you will get strange error messages
+(subfloat)                containing \c@subfloatfiguremax or
+(subfloat)                \c@subfloattablemax:
+(subfloat)                Please switch on countmax or remove the code using
+(subfloat)                the counter then..
+
+) (/opt/local/share/texmf-texlive/tex/latex/preprint/balance.sty
+Package: balance 1999/02/23 4.3 (PWD)
+\oldvsize=\dimen152
+)
+(/opt/local/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/opt/local/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count114
+\Gm@cntv=\count115
+\c@Gm@tempcnt=\count116
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks24
+)
+(./icpr2016-etsy.aux
+
+LaTeX Warning: Label `tab:classification accuracy' multiply defined.
+
+)
+\openout1 = `icpr2016-etsy.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 268.
+LaTeX Font Info:    ... okay on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 268.
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 268.
+ (/opt/local/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count117
+\scratchdimen=\dimen161
+\scratchbox=\box30
+\nofMPsegments=\count118
+\nofMParguments=\count119
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count120
+\MPscratchDim=\dimen162
+\MPnumerator=\count121
+\makeMPintoPDFobject=\count122
+\everyMPtoPDFconversion=\toks26
+) (/opt/local/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/opt/local/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/opt/local/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/opt/local/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(54.2025pt, 646.30435pt, 144.54pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=646.30435pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-18.06749pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=28.90755pt
+* \marginparwidth=20.0pt
+* \marginparsep=10.0pt
+* \columnsep=18.0pt
+* \skip\footins=9.89993pt plus 4.39993pt minus 2.19997pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 332.
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 332.
+
+(/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
+[][]$\T1/ptm/m/n/8 http : / / www . statista . com / statistics / 183755 /
+ []
+
+[1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+
+LaTeX Warning: Reference `sec:related' on page 2 undefined on input line 395.
+
+
+LaTeX Warning: Reference `sec:color' on page 2 undefined on input line 396.
+
+
+LaTeX Warning: Citation `wang15automatic' on page 2 undefined on input line 425
+.
+
+[2]
+<./figures/dress_il_fullxfull_927681771_b525.jpg, id=14, 404.51125pt x 606.265p
+t>
+File: ./figures/dress_il_fullxfull_927681771_b525.jpg Graphic file (type jpg)
+ <use ./figures/dress_il_fullxfull_927681771_b525.jpg>
+Package pdftex.def Info: ./figures/dress_il_fullxfull_927681771_b525.jpg used o
+n input line 453.
+(pdftex.def)             Requested size: 113.24197pt x 169.71603pt.
+
+<./figures/dress_sed.png, id=15, 705.63625pt x 703.62875pt>
+File: ./figures/dress_sed.png Graphic file (type png)
+
+<use ./figures/dress_sed.png>
+Package pdftex.def Info: ./figures/dress_sed.png used on input line 453.
+(pdftex.def)             Requested size: 113.24197pt x 112.91573pt.
+
+<./figures/flowers_il_fullxfull_719383783_7d69.jpg, id=17, 537.00626pt x 410.53
+375pt>
+File: ./figures/flowers_il_fullxfull_719383783_7d69.jpg Graphic file (type jpg)
+
+ <use ./figures/flowers_il_fullxfull_719383783_7d69.jpg>
+Package pdftex.def Info: ./figures/flowers_il_fullxfull_719383783_7d69.jpg used
+ on input line 457.
+(pdftex.def)             Requested size: 113.24197pt x 86.57169pt.
+
+<./figures/flowers_sed.png, id=18, 705.63625pt x 704.6325pt>
+File: ./figures/flowers_sed.png Graphic file (type png)
+
+<use ./figures/flowers_sed.png>
+Package pdftex.def Info: ./figures/flowers_sed.png used on input line 457.
+(pdftex.def)             Requested size: 113.24197pt x 113.07681pt.
+
+Underfull \hbox (badness 1642) in paragraph at lines 464--465
+ []\T1/ptm/m/it/10 Hue Count: [][] \T1/ptm/m/n/10 Pro-fes-sional pho-tographs l
+ook
+ []
+
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 477.
+
+
+<./figures/frames_il_fullxfull_732324506_py81.jpg, id=19, 361.35pt x 239.9364pt
+>
+File: ./figures/frames_il_fullxfull_732324506_py81.jpg Graphic file (type jpg)
+ <use ./figures/frames_il_fullxfull_732324506_py81.jpg>
+Package pdftex.def Info: ./figures/frames_il_fullxfull_732324506_py81.jpg used 
+on input line 485.
+(pdftex.def)             Requested size: 135.89174pt x 90.2322pt.
+
+<./figures/frames_saliency.png, id=20, 1060.96375pt x 702.625pt>
+File: ./figures/frames_saliency.png Graphic file (type png)
+
+<use ./figures/frames_saliency.png>
+Package pdftex.def Info: ./figures/frames_saliency.png used on input line 488.
+(pdftex.def)             Requested size: 135.89174pt x 89.99358pt.
+
+<./figures/frames_rot.png, id=21, 703.62875pt x 702.625pt>
+File: ./figures/frames_rot.png Graphic file (type png)
+
+<use ./figures/frames_rot.png>
+Package pdftex.def Info: ./figures/frames_rot.png used on input line 491.
+(pdftex.def)             Requested size: 135.89174pt x 135.69797pt.
+
+<./figures/purse_il_fullxfull_528061813_4lgo.jpg, id=22, 512.314pt x 369.7815pt
+>
+File: ./figures/purse_il_fullxfull_528061813_4lgo.jpg Graphic file (type jpg)
+ <use ./figures/purse_il_fullxfull_528061813_4lgo.jpg>
+Package pdftex.def Info: ./figures/purse_il_fullxfull_528061813_4lgo.jpg used o
+n input line 508.
+(pdftex.def)             Requested size: 135.89174pt x 98.0819pt.
+
+<./figures/purse_lbp.png, id=23, 975.645pt x 702.625pt>
+File: ./figures/purse_lbp.png Graphic file (type png)
+
+<use ./figures/purse_lbp.png>
+Package pdftex.def Info: ./figures/purse_lbp.png used on input line 511.
+(pdftex.def)             Requested size: 135.89174pt x 97.86293pt.
+
+<./figures/purse_db10.png, id=24, 974.64125pt x 701.62125pt>
+File: ./figures/purse_db10.png Graphic file (type png)
+
+<use ./figures/purse_db10.png>
+Package pdftex.def Info: ./figures/purse_db10.png used on input line 516.
+(pdftex.def)             Requested size: 135.89174pt x 97.81947pt.
+
+<./figures/purse_db11.png, id=25, 973.6375pt x 701.62125pt>
+File: ./figures/purse_db11.png Graphic file (type png)
+
+<use ./figures/purse_db11.png>
+Package pdftex.def Info: ./figures/purse_db11.png used on input line 516.
+(pdftex.def)             Requested size: 135.89174pt x 97.92653pt.
+
+<./figures/purse_db12.png, id=26, 974.64125pt x 703.62875pt>
+File: ./figures/purse_db12.png Graphic file (type png)
+
+<use ./figures/purse_db12.png>
+Package pdftex.def Info: ./figures/purse_db12.png used on input line 516.
+(pdftex.def)             Requested size: 135.89174pt x 98.09937pt.
+ [3] [4 <./figures/dress_il_fullxfull_927681771_b525.jpg> <./figures/dress_sed.
+png> <./figures/flowers_il_fullxfull_719383783_7d69.jpg> <./figures/flowers_sed
+.png> <./figures/frames_il_fullxfull_732324506_py81.jpg> <./figures/frames_sali
+ency.png> <./figures/frames_rot.png>]
+Overfull \hbox (13.96182pt too wide) detected at line 530
+\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = [] [] [] \OML/cmm/m/it/10 l\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 m; n\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 :
+ []
+
+
+<./figures/spoons_il_fullxfull_661851396_jppy.jpg, id=44, 1505.625pt x 1001.742
+5pt>
+File: ./figures/spoons_il_fullxfull_661851396_jppy.jpg Graphic file (type jpg)
+ <use ./figures/spoons_il_fullxfull_661851396_jppy.jpg>
+Package pdftex.def Info: ./figures/spoons_il_fullxfull_661851396_jppy.jpg used 
+on input line 562.
+(pdftex.def)             Requested size: 135.89174pt x 90.41278pt.
+
+<./figures/spoons_laplacian_low_dof.png, id=45, 1056.94875pt x 703.62875pt>
+File: ./figures/spoons_laplacian_low_dof.png Graphic file (type png)
+
+<use ./figures/spoons_laplacian_low_dof.png>
+Package pdftex.def Info: ./figures/spoons_laplacian_low_dof.png used on input l
+ine 565.
+(pdftex.def)             Requested size: 135.89174pt x 90.46571pt.
+
+<./figures/spoons_laplacian_low_dof_swd.png, id=46, 1058.95625pt x 702.625pt>
+File: ./figures/spoons_laplacian_low_dof_swd.png Graphic file (type png)
+
+<use ./figures/spoons_laplacian_low_dof_swd.png>
+Package pdftex.def Info: ./figures/spoons_laplacian_low_dof_swd.png used on inp
+ut line 568.
+(pdftex.def)             Requested size: 135.89174pt x 90.16512pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5 <./figures/purse_il_fullxfull_528061813_4lgo.jpg> <./figures/purse_lbp.png> 
+<./figures/purse_db10.png> <./figures/purse_db11.png> <./figures/purse_db12.png
+>]
+
+LaTeX Warning: Reference `fig:chart' on page 6 undefined on input line 659.
+
+
+LaTeX Warning: Reference `fig:chart' on page 6 undefined on input line 660.
+
+
+LaTeX Warning: Reference `fig:aaa' on page 6 undefined on input line 664.
+
+
+LaTeX Warning: Reference `fig:bbb' on page 6 undefined on input line 666.
+
+[6 <./figures/spoons_il_fullxfull_661851396_jppy.jpg> <./figures/spoons_laplaci
+an_low_dof.png> <./figures/spoons_laplacian_low_dof_swd.png>]
+(./icpr2016-etsy.bbl)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[7] (./icpr2016-etsy.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5886 strings out of 494185
+ 88565 string characters out of 6156887
+ 160227 words of memory out of 5000000
+ 9044 multiletter control sequences out of 15000+600000
+ 118189 words of font info for 137 fonts, out of 8000000 for 9000
+ 433 hyphenation exceptions out of 8191
+ 38i,11n,38p,946b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</opt/local/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx7.pfb></opt/local/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/local/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/local/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmmi5.pfb></opt/local/share/texmf-texlive/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb></opt/local/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmr7.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></opt/local/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmsy7.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></op
+t/local/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></opt/local/share
+/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></opt/local/share/texmf-texlive
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on icpr2016-etsy.pdf (7 pages, 4152222 bytes).
+PDF statistics:
+ 107 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+
