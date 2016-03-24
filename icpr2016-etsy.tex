@@ -1,0 +1,709 @@
+
+\documentclass[conference,a4paper]{IEEEtran}
+% Add the compsoc option for Computer Society conferences.
+%
+% If IEEEtran.cls has not been installed into the LaTeX system files,
+% manually specify the path to it like:
+% \documentclass[conference]{../sty/IEEEtran}
+
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{supertabular}
+\usepackage{graphicx,subfigure}
+\usepackage{multirow}
+\usepackage[bottom]{footmisc}
+\usepackage{url}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{epsfig}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{graphicx,subfigure}
+\usepackage{url}
+\usepackage{subfloat}
+\usepackage{times}
+\usepackage{balance}
+\usepackage[
+top    = 0.75 in,
+bottom = 2in,
+left   = 1in,
+right  = 1in]{geometry}
+
+% *** GRAPHICS RELATED PACKAGES ***
+%
+\ifCLASSINFOpdf
+  % \usepackage[pdftex]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+% graphicx was written by David Carlisle and Sebastian Rahtz. It is
+% required if you want graphics, photos, etc. graphicx.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at: 
+% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
+% Another good source of documentation is "Using Imported Graphics in
+% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
+% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
+%
+% latex, and pdflatex in dvi mode, support graphics in encapsulated
+% postscript (.eps) format. pdflatex in pdf mode supports graphics
+% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
+% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
+% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
+% which can result in "jaggedy"/blurry rendering of lines and letters as
+% well as large increases in file sizes.
+%
+% You can find documentation about the pdfTeX application at:
+% http://www.tug.org/applications/pdftex
+
+
+
+
+
+% *** MATH PACKAGES ***
+%
+%\usepackage[cmex10]{amsmath}
+% A popular package from the American Mathematical Society that provides
+% many useful and powerful commands for dealing with mathematics. If using
+% it, be sure to load this package with the cmex10 option to ensure that
+% only type 1 fonts will utilized at all point sizes. Without this option,
+% it is possible that some math symbols, particularly those within
+% footnotes, will be rendered in bitmap form which will result in a
+% document that can not be IEEE Xplore compliant!
+%
+% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
+% thus preventing page breaks from occurring within multiline equations. Use:
+%\interdisplaylinepenalty=2500
+% after loading amsmath to restore such page breaks as IEEEtran.cls normally
+% does. amsmath.sty is already installed on most LaTeX systems. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
+
+
+
+
+
+% *** SPECIALIZED LIST PACKAGES ***
+%
+%\usepackage{algorithmic}
+% algorithmic.sty was written by Peter Williams and Rogerio Brito.
+% This package provides an algorithmic environment fo describing algorithms.
+% You can use the algorithmic environment in-text or within a figure
+% environment to provide for a floating algorithm. Do NOT use the algorithm
+% floating environment provided by algorithm.sty (by the same authors) or
+% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
+% algorithm float types and packages that provide these will not provide
+% correct IEEE style captions. The latest version and documentation of
+% algorithmic.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
+% There is also a support site at:
+% http://algorithms.berlios.de/index.html
+% Also of interest may be the (relatively newer and more customizable)
+% algorithmicx.sty package by Szasz Janos:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
+
+
+
+
+% *** ALIGNMENT PACKAGES ***
+%
+%\usepackage{array}
+% Frank Mittelbach's and David Carlisle's array.sty patches and improves
+% the standard LaTeX2e array and tabular environments to provide better
+% appearance and additional user controls. As the default LaTeX2e table
+% generation code is lacking to the point of almost being broken with
+% respect to the quality of the end results, all users are strongly
+% advised to use an enhanced (at the very least that provided by array.sty)
+% set of table tools. array.sty is already installed on most systems. The
+% latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/required/tools/
+
+
+%\usepackage{mdwmath}
+%\usepackage{mdwtab}
+% Also highly recommended is Mark Wooding's extremely powerful MDW tools,
+% especially mdwmath.sty and mdwtab.sty which are used to format equations
+% and tables, respectively. The MDWtools set is already installed on most
+% LaTeX systems. The lastest version and documentation is available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/mdwtools/
+
+
+% IEEEtran contains the IEEEeqnarray family of commands that can be used to
+% generate multiline equations as well as matrices, tables, etc., of high
+% quality.
+
+
+%\usepackage{eqparbox}
+% Also of notable interest is Scott Pakin's eqparbox package for creating
+% (automatically sized) equal width boxes - aka "natural width parboxes".
+% Available at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox/
+
+
+
+
+
+% *** SUBFIGURE PACKAGES ***
+%\usepackage[tight,footnotesize]{subfigure}
+% subfigure.sty was written by Steven Douglas Cochran. This package makes it
+% easy to put subfigures in your figures. e.g., "Figure 1a and 1b". For IEEE
+% work, it is a good idea to load it with the tight package option to reduce
+% the amount of white space around the subfigures. subfigure.sty is already
+% installed on most LaTeX systems. The latest version and documentation can
+% be obtained at:
+% http://www.ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
+% subfigure.sty has been superceeded by subfig.sty.
+
+
+
+%\usepackage[caption=false]{caption}
+%\usepackage[font=footnotesize]{subfig}
+% subfig.sty, also written by Steven Douglas Cochran, is the modern
+% replacement for subfigure.sty. However, subfig.sty requires and
+% automatically loads Axel Sommerfeldt's caption.sty which will override
+% IEEEtran.cls handling of captions and this will result in nonIEEE style
+% figure/table captions. To prevent this problem, be sure and preload
+% caption.sty with its "caption=false" package option. This is will preserve
+% IEEEtran.cls handing of captions. Version 1.3 (2005/06/28) and later 
+% (recommended due to many improvements over 1.2) of subfig.sty supports
+% the caption=false option directly:
+%\usepackage[caption=false,font=footnotesize]{subfig}
+%
+% The latest version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
+% The latest version and documentation of caption.sty can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
+
+
+
+
+% *** FLOAT PACKAGES ***
+%
+%\usepackage{fixltx2e}
+% fixltx2e, the successor to the earlier fix2col.sty, was written by
+% Frank Mittelbach and David Carlisle. This package corrects a few problems
+% in the LaTeX2e kernel, the most notable of which is that in current
+% LaTeX2e releases, the ordering of single and double column floats is not
+% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
+% single column figure to be placed prior to an earlier double column
+% figure. The latest version and documentation can be found at:
+% http://www.ctan.org/tex-archive/macros/latex/base/
+
+
+
+%\usepackage{stfloats}
+% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
+% the ability to do double column floats at the bottom of the page as well
+% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
+% LaTeX2e). It also provides a command:
+%\fnbelowfloat
+% to enable the placement of footnotes below bottom floats (the standard
+% LaTeX2e kernel puts them above bottom floats). This is an invasive package
+% which rewrites many portions of the LaTeX2e float routines. It may not work
+% with other packages that modify the LaTeX2e float routines. The latest
+% version and documentation can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/sttools/
+% Documentation is contained in the stfloats.sty comments as well as in the
+% presfull.pdf file. Do not use the stfloats baselinefloat ability as IEEE
+% does not allow \baselineskip to stretch. Authors submitting work to the
+% IEEE should note that IEEE rarely uses double column equations and
+% that authors should try to avoid such use. Do not be tempted to use the
+% cuted.sty or midfloat.sty packages (also by Sigitas Tolusis) as IEEE does
+% not format its papers in such ways.
+
+
+
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+%
+%\usepackage{url}
+% url.sty was written by Donald Arseneau. It provides better support for
+% handling and breaking URLs. url.sty is already installed on most LaTeX
+% systems. The latest version can be obtained at:
+% http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
+% Read the url.sty source comments for usage information. Basically,
+% \url{my_url_here}.
+
+
+
+
+
+% *** Do not adjust lengths that control margins, column widths, etc. ***
+% *** Do not use packages that alter fonts (such as pslatex).         ***
+% There should be no need to do such things with IEEEtran.cls V1.6 and later.
+% (Unless specifically asked to do so by the journal or conference you plan
+% to submit to, of course. )
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+%some lame title for now
+\title{Image Popularity on Etsy through Hand-crafted Feature Vectors}
+
+
+% author names and affiliations
+% use a multiple column layout for up to three different
+% affiliations
+
+ \author{
+Stephen Zakrewsky\\
+\emph{Drexel University}\\
+\emph{sz372@drexel.edu}
+\and
+Kamelia Aryafar\\ 
+\emph {Etsy Inc.}\\
+\emph {karyafar@etsy.com}
+\and
+Ali Shokoufandeh\\
+\emph{Drexel University}\\
+\emph{ashokouf@cs.drexel.edu}}
+
+% conference papers do not typically use \thanks and this command
+% is locked out in conference mode. If really needed, such as for
+% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
+% after \documentclass
+
+% for over three affiliations, or if they all won't fit within the width
+% of the page, use this alternative format:
+% 
+%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
+%Homer Simpson\IEEEauthorrefmark{2},
+%James Kirk\IEEEauthorrefmark{3}, 
+%Montgomery Scott\IEEEauthorrefmark{3} and
+%Eldon Tyrell\IEEEauthorrefmark{4}}
+%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
+%Georgia Institute of Technology,
+%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
+%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
+%Telephone: (800) 555--1212, Fax: (888) 555--1212}
+%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
+
+
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+
+
+
+% make the title area
+\maketitle
+
+\begin{abstract}
+%\boldmath
+The online realm has become a driving force in the retail
+marketplace. E-Commerce websites can provide a level of diversity and
+uniqueness that is impossible in the world of brick-and-mortar
+retail. Etsy is an online marketplace\footnote{\url{www.etsy.com}} for
+artisans selling unique handcrafted goods, and vintage wares that
+couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite{Anderson:2006}. 
+ 
+Intuitively, online retail is a visual experience- shoppers have
+particular styles that they find appealing; often images are used as
+first order information when making shopping decisions. There are a
+variety of signals extracted from the images representing those items
+for sale by shoppers. Amongst these, color composition is an important
+cue for visual search and image ranking- often shoppers have a palette
+of favorite colors, or a mental image of what they're looking for,
+partially determined by color. In this paper, we introduce a novel
+dataset for user behaviour prediction. We address the problem of
+inferring dominant color composition from the pixel-level color
+distribution of listed images on Etsy.
+ We explore the dominant colors of favorited listings and investigate the entropy of colors distribution among Etsy users.
+\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the conference you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals/conferences frown on
+% math in the abstract anyway.
+
+% no keywords
+
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+\ifCLASSOPTIONpeerreview
+ \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+ \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+\IEEEpeerreviewmaketitle
+
+
+
+\section{Introduction}
+%JOSH
+It is difficult to overstate the importance of online retail and e-commerce. According to the website statista\footnote{\url{http://www.statista.com/statistics/183755/number-of-us-internet-shoppers-since-2009/}}, $190$ million people in the United States alone purchased something online. These purchases covered the spectrum of consumer products- books, clothes, furniture, home goods, electronics, and almost anything else one could imagine. Indeed, the economies of scale provided by online retail enable sales that would otherwise be impossible. If one wants a MiG fighter jet, or a part of the space shuttle, it is available online, provided one knows where to look and that the time is right. 
+ 
+While online retail seems poised to transform the way people shop, the way shoppers connect with their purchases- through touch, through smell, and through sight, aren't possible with online goods. To bridge these gaps, online retailers have emphasized the visual components of their wares, offering detailed descriptions, and, importantly, rich visual representations of what is for sale in the form of images. Because images offer an unparalleled degree of information density to the shopper, they have become a crucial factor in the online shopping decision process. 
+ 
+This paper presents techniques for improving and understanding the online shopping experience at a major e-commerce website, Etsy. Rather than act as a retailer of goods, Etsy is a marketplace, where over a million individual sellers can set up shop, and market their own goods to a shopping community of many millions of people in over 180 countries. Currently in this marketplace, there are over 30 million unique items for sale (listings), and well over 90 million unique images representing these items. With such an expansive image dataset, Etsy is uniquely poised to present users with a rich visual experience. 
+ 
+Importantly, with the proliferation of mobile devices, the text that has dominated conventional information retrieval for the past 15 years has become burden- users are driven by visual experiences rather than through the input and consumption of text. This reliance on visual stimuli has spurred a great interest in new ways to expand textual search into visual search. In doing so, one must understand the behavior of shoppers surrounding images.
+ 
+The presentation of product listings through images plays
+an important role on commerce websites. Conventional text-based  product search relies heavily on the similarity between 
+the query input by a user and the textual metadata describing what is for sale- listing tags, titles, descriptions, etc. All information added by those users who have listed what is for sale. These search
+results might include a large number of relevant product listings, all of them
+containing very similar tags, but with varying levels of image quality
+and aesthetic appeal. Generally, in the setting of unique handmade or vintage goods, this text-based approach to shopping might yield high recall, but low precision. For a product listing to stand out among query-based
+search results, high-quality images describing the content of the
+product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. 
+ 
+In this paper we introduce a mechanism for presenting product listings in terms of the dominant colors used in the images representing those listings. We then explore the correlation between listings' dominant colors and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into an alternative mechanism for interaction, the ``favorite.'' Favorites on Etsy are similar to any number of ``like'' mechanisms available online, the most familiar of which is Facebook's ubiquitous ``thumbs-up.'' By considering what users explicitly express interest in, we are able to form relationships between user preferences and color-based listing features. 
+ 
+The remainder of the paper is organized as follows:
+Section~\ref{sec:related} discuss related work on color detection and
+visual search. Section~\ref{sec:color} describes dominant product
+listing color detection with object localization. We examine the
+utilization of color unigrams in favorite listings classification in
+section~\ref{sec:classification} and explore dominant color
+distribution entropy among active users in
+section~\ref{sec:entropy}. Finally, we conclude this paper in
+section~\ref{sec:conclusion} and propose future research directions.
+%JOSH
+
+\section{Background}
+\label{sec:background}
+Recent advances in multimedia industry have redefined the dynamics of
+e-commerce. Tens of millions or even billions of product listings and associated listings images are
+available in a large online market place. These massive datasets require various methods for acquiring, processing,
+analyzing, and understanding images in order to produce numerical or symbolic
+information, such as color and texture characteristics that can be used for content based image search and retrieval~\cite{
+  bhardwajpalette,zhou2012document,faloutsos1994efficient}. 
+Various global image features such as color histograms~\cite{rao1999spatial}, texture
+values~\cite{haralick1979statistical} and shape parameters of easily segmentable regions~\cite{niblack1993qbic} and localized features such
+as scale invariant feature transform (SIFT) ~\cite{lowe2004distinctive}, speeded up
+robust features (SURF)~\cite{bay2006surf} and histogram of oriented gradients (HOG)
+~\cite{dalal2005histograms} are proposed for image content retrieval
+and search.  With content-based image retrieval on the rise, the study of cues that
+could help in ranking the images of varying levels of popularity is becoming an important problem.
+
+\subsection{What is Popularity?}
+Early work defined popularity as quality~\cite{ke2006design} or aesthetics~\cite{datta2006studying} and use data from photography rating websites where users who have interest in photography upload their photos and rate others.  Popularity has also been defined as memorability~\cite{isola2011makes}, and interestingness~\cite{dhar2011high,gygli2013interestingness}.  More recent work has directly tackled popularity.  In \cite{khosla2014makes}, popularity is defined as the number of views on Flickr, and \cite{aryafar2014exploring} uses favorited listings on Etsy.
+
+\subsection{How to Predict Popularity}
+Popularity tends to be predicted using SVM classification or regression \cite{datta2006studying} \cite{khosla2014makes} \cite{chen2014aesthetic} \cite{wang15automatic}.  Datta et. al. \cite{datta2006studying} uses a two class SVM classifier with a forward selection algorithm to find good feature sets.  By using elastic net to rank feature relevance to aesthetics, and a best first algorithm to find feature sets that minimize the RMSE cross validation error, \cite{wang2015automatic} are able to achieve a 30.1\% improvement compared to \cite{chen2014aesthetic}.  In \cite{ke2006design} a naive Bayes classifier is used, not SVM.  Other recent work has explored other machine learning techniques.  Aryafar et. al \cite{aryafar2014exploring} studied the significance of color in favorited listings on Etsy using logistic regression, perceptron, passive aggressive and margin infused relaxed algorithms.
+
+\subsection{Popularity Features}
+The features used in popularity prediction model the same qualities professional photographers use such as light, color, rule of thirds, texture, smoothness, blurriness, depth of field, scene composition \cite{ke2006design} \cite{datta2006studying} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Most of these features are unsupervised, but some such as the spacial edge distribution and color distribution features of \cite{ke2006design} require all of the labeled training data.  Some recent work has looked at semantic object features.  \cite{khosla2014makes} used the popular CNN ImageNet to detect the presence of 1000 difference object categories in the image.  The presence/absence of these categories is used as the feature.
+
+\subsection{Our Approach}
+With more than 30 million active listings and over 90 million listing images, Etsy provides a unique visually enticing experience
+for users. Because images are uploaded by users of the site,
+representing the myriad items for sale, these images are composed of different items, presented with various
+lighting conditions, scene geometries and background selections. One of
+the key components of e-commerce websites is
+efficient image search and color filtering methods. Presence of occluded backgrounds and highly
+textured material can hinder the accuracy of color detection
+algorithms.  In our work, we define popularity as listings that have been favorited, clicked on, or purchased, and we show that unsupervised image popularity features are statistically significant when combined with traditional text meta-data features in predicting popularity.  In \ref{sec:features} we present the features we used.
+
+\section{Features}
+\label{sec:features}
+  \subsection{Simplicity}
+  High quality photos are typically simpler than others.  They often have one subject placed deliberately in the frame.  Sometimes the background is out of focus to emphasize the subject.  Poor quality photographs tend to have cluttered backgrounds and it may be difficult to distinguish the subject of the scene.  We used the four blind measures of simplicity from \cite{ke2006design}.
+
+  \subsubsection{Spatial Edge Distribution}
+  Spatial edge distribution measures how spread out sharp edges are in the image.  A single subject is expected to have a small distribution while an image with a cluttered background would have a large distribution.  Edges are detected by applying a 3x3 Laplacian filter and taking the absolute value.  The filter is applied to each RGB channel independently and the final image is computed as the mean across all three channels.  The Laplacian image is resized to 100x100 and normalized to sum to 1.  Then, the edges are projected onto the x and y axis independently.  Let $w_x$, and $w_y$ be the width of 98\% of the projected edges respectively.  The image quality feature $f_1 = 1 - w_x w_y$ is the percent of area outside the majority of edges.
+
+\begin{figure*}
+  \centering
+  \subfigure[]{
+    \includegraphics[width=0.25\textwidth]{./figures/dress_il_fullxfull_927681771_b525.jpg}
+    \includegraphics[width=0.25\textwidth]{./figures/dress_sed.png}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.25\textwidth]{./figures/flowers_il_fullxfull_719383783_7d69.jpg}
+    \includegraphics[width=0.25\textwidth]{./figures/flowers_sed.png}
+  }
+  \caption{
+  The Laplacian image for computing spacial edge distribution for two images.  The feature for figure a. is 0.013 and for b. is 0.30.
+  }
+\end{figure*}
+
+  \subsubsection{Hue Count}
+  Professional photographs look more colorful and vibrant, but actually tend to have less distinct hues because cluttered scenes contain many heterogeneous objects.  We use a hue count feature by filtering an image in HSV color space such that V is in the range of [0.15, 0.95] and S is greater than 0.2.  A 20 bin histogram is computed on the remaining H values.  Let $m$ be the maximum value of the histogram and let $N = \{i | H(i) > \alpha m\}$, be the set of bins values greater than $\alpha m$.  The quality feature $f = 20 - ||N||$ is 0 when there are a many different hues and larger as the number of distinct hues in the image goes down.  We used $alpha = 0.05$ as in \cite{ke2006design}.
+
+  \subsubsection{Contrast and Lightness}
+  Brightness is a well known variable that professional photographers are trained to understand and adjust.  We use the average brightness feature \cite{ke2006design}, \cite{chen2014aesthetic} computed from the L channel of the Lab color space.  Contrast is similar, and is the ratio of maximum and minimum pixel intensities.  We sum the RGB level histograms, and normalize it to sum to 1.  We use the width of the center 98\% mass of the histogram \cite{ke2006design}.
+
+   \subsection{Blur}
+  Blurry images are almost always considered to be of poor quality.  We use the blur features of \cite{ke2006design} and \cite{tong2004blur}.  In \cite{ke2006design} blur is modeled as $I_b = G_\sigma * I$ where $I_b$ is the result of convolving a Gaussian filter with an image.  The larger the $\sigma$ the more high frequencies are removed from the image.  Assuming the frequency distribution of all $I$ is approximately the same, then the maximum frequency $||C||$ can be estimated as $C = \{(u, v) | ||FFT(I_b)|| > \Theta\}$.  The feature is $f = ||C|| \sim 1/\sigma$, after normalizing by the image size.
+
+  In \cite{tong2004blur}, blur estimation is done based on changes in the edge structures.  The blur operation will cause gradual edges to lose sharpness.  Assuming that most images have gradual edges that are sharp enough, the blur is measured as the ratio of gradual edges that have lost their sharpness.
+
+  \subsection{Rule of Thirds}
+  The rule of thirds is an important composition technique.  Thirds lines are the horizontal and vertical lines that divide an image into a 3x3 grid of equal sized cells.  The rule of thirds states that subjects placed along these lines are aesthetically more pleasing and more natural than subjects centered in the photograph.  In order to segment the subject of the image from the background, we use the Spectral Residual saliency detection algorithm \cite{hou2007saliency}.  The feature is a 5x5 map where each cell is the average saliency value \cite{mai2011rule}.  Let $w_p$ be the saliency value of the pixel and $A(W_i)$ is the area of the cell, then the value of each cell is
+  \begin{equation}
+    w_i = {\sum_{p \in W_i} w_p \over A(W_i)} .
+  \end{equation}
+  To compute the feature, the image is divided into a 5x5 grid with emphasis on the thirds lines; the horizontal and vertical regions centered on the thirds lines are 1/6 of the image size.
+
+\begin{figure*}
+  \centering
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/frames_il_fullxfull_732324506_py81.jpg}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/frames_saliency.png}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/frames_rot.png}
+  }
+  \caption{
+    Example of Rule of Thirds feature.  Figure b. shows the SR saliency detection, and c. shows the thirds map feature.
+  }
+\end{figure*}
+
+  \subsection{Texture}
+  A smooth image may indicate blur or out-of-focus, and the lack of which may indicate poor film, or too high an ISO setting.  In contrast, texture in the scene is an important composition skill of a photographer.  Smoothness may indicate the lack of texture.  Texture and smoothness are some of the most statically correlated features for quality/popularity \cite{wang2015automatic} and \cite{khosla2014makes}.  We use three smoothness/texture features from these.
+
+  A three level wavelet transform is applied to the L channel of the Lab color space.  We only use the bottom level of the pyramid.  The result is squared to indicate power.  We used the feature $f = {1\over 3MN} \sum_{m=1}^{M}\sum_{n=1}^{N}\sum_{b}w^b(m, n)$ where $b = \{HH, HL, LH\}$ is the bottom level of a wavelet transform and $w$ is the square.  The feature $f = {1\over 3MN} \sum_{m=1}^{M}\sum_{n=1}^{N}l(m, n)$, is also used where $l$ is the second level of a Laplacian pyramid.
+
+  Another texture feature is computed using local binary pattern (LBP).  Then a pyramid of histograms are computed as in \cite{lazebnik2006beyond}.
+
+\begin{figure*}
+  \centering
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/purse_il_fullxfull_528061813_4lgo.jpg}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/purse_lbp.png}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/purse_db10.png}
+    \includegraphics[width=0.3\textwidth]{./figures/purse_db11.png}
+    \includegraphics[width=0.3\textwidth]{./figures/purse_db12.png}
+  }
+  \caption{
+  Smoothness and texture features.  Figure b. shows Local Binary Pattern (LBP) feature image, and c. shows the 3 channels of the DB1 wavelet transform.
+  }
+\end{figure*}
+
+  \subsection{Depth of Field}
+  Depth of field is the distance between between the nearest and farthest objects that appear in sharp focus.  A technique of professional photographers is to use low depth of field to focus on the photographic subject while blurring the background.  We used the feature \cite{datta2006studying} of the ratio of high frequency detail in center regions of the image compared to the entire image.  Let $w$ be the bottom level of a wavelet transform,
+  \begin{equation}
+    f ={\sum_{(x,y)}\in M_6\cup M_7\cup M_{10}\cup M_{11} w(x,y) \over \sum_{i=1}^{16}\sum_{(x,y)\in M_i} w(x,y)} .
+  \end{equation}
+  The same feature is reapplied using the Laplacian pyramid $l$ instead of $w$ \cite{wang2015automatic}.  These features only look at the center region of the image.  A third feature \cite{wang2015automatic} looks at the spacial distribution of high frequency details.  Let $l$ be the bottom layer of a Laplacian pyramid,
+  \begin{equation}
+    f = {1 \over MN} \sum_{m=1}^M\sum_{n=1}^N l(m,n)\sqrt{(m-c_{row})^2 + (n-c_{col})^2} .
+  \end{equation}
+
+  \subsection{Experimental}
+  Maximally Stable Extremal Regions (MSER) \cite{matas2004robust} can be used to detect text because characters are typically single solid colors with sharp edges that standout from the background \cite{chen2011robust}.  Additionally, texture patterns are also often detected by MSER, like bricks on a wall.  We used the experimental feature the count of the number of MSER regions.  We would like to continue this experiment into other features based on text in images.
+ 
+\section{User Behaviour and Colors}
+\label{sec:experiments}
+In this section we present the unique dataset for quantitative evaluation of colors
+impact in user behaviour on Etsy. Once an item is listed on Etsy, the
+users can favorite a listing which allows them to bring all the items
+they like in one place. We first examine the listings dominant colors
+to predict if a listings is likely to be favorited or not. Then we
+explore the entropy of dominant colors among users favorites to
+indicate the color variations among favorited listings.
+ Two datasets are used for
+classification of favorited listings and color entropy
+experiments. The classification dataset consists of $2.73$ million unique
+listings that have been created within the last month on Etsy. The
+listings images are tagged with the top three dominant colors and
+labeled as positive if they have been favorited by a user in that period. 
+To collect the entropy dataset, a set of $11235$ active users with more
+than $20$ and less than $2000$ favorited listings within the past six
+months are selected. The entropy dataset then consists of $2.32$ million unique listings that candidate
+users have favorited over the last 6 months on Etsy. These listings
+images are also tagged with top three dominant colors. These two
+datasets contain more than $5.05$ million listing images and dominant
+color tags and are available through Etsy's API\footnote{\url{www.etsy.com/developers}}.
+
+\begin{figure*}
+  \centering
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/spoons_il_fullxfull_661851396_jppy.jpg}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/spoons_laplacian_low_dof.png}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/spoons_laplacian_low_dof_swd.png}
+  }
+  \caption{
+  Figure b. shows the Low Depth of Field features in the center grid region for the Laplacian image.  Figure c. shows the same image with its center of mass.
+  }
+\end{figure*}
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{| l | c | c |}
+\hline
+Feature & Dimension \\ \hline
+'Ke06-qa': spatial edge distribution & 1 \\ \hline
+'Ke06-qh': hue count & 1 \\ \hline
+'Ke06-qf': blur & 1 \\ \hline
+'Ke06-tong': blur tong etal & 1 \\ \hline
+'Ke06-qct': contrast & 1 \\ \hline
+'Ke06-qb': brightness & 1 \\ \hline
+'-mser count': mser count & 1 \\ \hline
+'Mai11-thirds map': thirds map & 25 \\ \hline
+'Wang15-f1': avg lightness & 1 \\ \hline
+'Wang15-f14': wavelet smoothness, & 1 \\ \hline
+'Wang15-f18': laplacian smoothness & 1 \\ \hline
+'Wang15-f21': wavelet low dof & 1 \\ \hline
+'Wang15-f22': laplacian low dof & 1 \\ \hline
+'Wang15-f26': laplacian low dof swd & 1 \\ \hline
+'Khosla14-texture': texture & 5120 \\ \hline
+\hline
+\end{tabular}
+\end{center}
+\caption{Feature Dimensions}
+\end{table}
+
+\subsection{Classification}
+\label{sec:classification}
+\begin{table}[h!]
+   \label{tab:classification accuracy}
+    \begin{center}
+\begin{tabular}{|c||c|c|} 
+\hline
+Classification method&Average accuracy rate& AUC\\
+\hline
+ \hline
+logistic regression& $0.5512$ & $0.5694$\\ \hline
+perceptron&$\mathbf{0.5600}$&$\mathbf{0.5906}$\\ \hline
+passive aggressive&$0.5329$& $0.5240$\\ \hline
+MIRA&$0.5232$&$0.5240$\\ \hline
+ \hline
+ \end{tabular}
+   \end{center}
+\caption{Average classification accuracy rate and AUC are reported
+     for favorite listing classification using text and color
+     features.}
+  \label{tab:classification accuracy}
+\end{table}
+
+Once the classification dataset has been tagged with top three
+dominant colors, we extract textual information from the
+listings. These textual features consist of the tokenized listings
+titles unigrams and bigrams and tokenized listings
+tags unigrams. We then represent each listing with a feature vector including textual features
+and color unigrams. A binary classification is then performed to
+predict if the test listings are favorited by
+users. We report the average classification accuracy rate and the area
+under the curve (AUC) with four different classifiers. Logistic
+regression, passive-agressive classifier, perceptron and margin
+infused relaxed algorithm (MIRA) are used as the learning models.
+Table~\ref{tab:classification accuracy} shows the results
+of four rounds of 5-fold classification on this dataset. 
+The textual information and color unigrams do not indicate a strong
+improvement in favoriting behaviour prediction. It will be interesting
+to observe the effects of image quality, memorability, aesthetics and
+interestingness for the similar problem on this unique dataset.
+
+\subsection{Entropy Estimation on Selected Users}
+\label{sec:entropy}
+% \begin{figure}[h!]
+%         \centering
+%            \includegraphics[scale =0.2] {./figures/chart.jpg}
+         
+%         \caption{ Number of users in each entropy interval.}
+%      \label{fig:chart}
+% \end{figure}
+
+In this experiment we measure the entropy of dominant colors
+distribution among
+$11235$ active users with more
+than $20$ and less than $2000$ favorited listings within the past six
+months. These users have favorited $2.32$ million unique
+listings. The listings images are first tagged with top three dominant
+colors and the entropy of color distribution is estimated using the
+histogram approach. Figure~\ref{fig:chart} shows the number of users
+in each entropy interval. As we can observe in figure~\ref{fig:chart},
+most active users have high color distribution entropy in their
+favorited listings. There are however, some users with low color
+distribution entropy which highlights a strong tendency to favorite
+specific colors on Etsy. Figure~\ref{fig:aaa} shows a set of favorites
+for a user with the lowest color distribution entropy while
+figure~\ref{fig:bbb} illustrates selected favorited listings by
+highest color entropy user.
+
+\section{conclusion}
+\label{sec:conclusion}
+This works represents a initial study on understanding how images,
+specifically color-based image features, can be used to represent
+items in an e-commerce setting, thereby providing better user
+understanding and a better overall shopping experience. To facilitate
+this understanding, this work proposed an  empirical method to
+estimate the dominant colors of images representing product listings
+on Etsy, using object localization. 
+
+We used this dominant colors to filter listings in a conventional text-based e-commerce search, according to user input. Moreover we explored the color distribution among candidate users favorited listings. We also examined the impact of color unigrams on users favoriting behaviour. This work represents the tip of the iceberg of understanding how visual cues influence user action in an e-commerce setting. 
+
+ While color is no doubt important and an influencing factor while shopping, future work involves incorporating a deeper visual understanding of listing images. Image composition, texture and aesthetics all influence the emotional reaction that users have when seeing an item for the first time. Future work seeks to incorporate a richer understanding of images, using this improved representation to better model user preference, and provide a more effective e-commerce experience.
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+\bibliography{ref}
+%
+% <OR> manually copy in the resultant .bbl file
+% set second argument of \begin to the number of references
+% (used to reserve space for the reference number labels box)
+
+% that's all folks
+\end{document}
+
+
