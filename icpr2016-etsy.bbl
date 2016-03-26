@@ -25,6 +25,12 @@
 C.~Anderson, \emph{The Long Tail: Why the Future of Business Is Selling Less of
   More}.\hskip 1em plus 0.5em minus 0.4em\relax Hyperion, 2006.
 
+\bibitem{aryafar2014exploring}
+K.~Aryafar, C.~Lynch, and J.~Attenberg, ``Exploring user behaviour on etsy
+  through dominant colors,'' in \emph{2014 22nd International Conference on
+  Pattern Recognition (ICPR)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2014, pp. 1437--1442.
+
 \bibitem{wang2011aesthetics}
 Y.~J. Wang, M.~S. Minor, and J.~Wei, ``Aesthetics and the online shopping
   environment: Understanding consumer responses,'' \emph{Journal of Retailing},
@@ -119,12 +125,6 @@ M.~Gygli, H.~Grabner, H.~Riemenschneider, F.~Nater, and L.~Van~Gool, ``The
 A.~Khosla, A.~Das~Sarma, and R.~Hamid, ``What makes an image popular?'' in
   \emph{Proceedings of the 23rd international conference on World wide
   web}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2014, pp. 867--876.
-
-\bibitem{aryafar2014exploring}
-K.~Aryafar, C.~Lynch, and J.~Attenberg, ``Exploring user behaviour on etsy
-  through dominant colors,'' in \emph{2014 22nd International Conference on
-  Pattern Recognition (ICPR)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
-  2014, pp. 1437--1442.
 
 \bibitem{chen2014aesthetic}
 M.~Chen and J.~Allebach, ``Aesthetic quality inference for online fashion

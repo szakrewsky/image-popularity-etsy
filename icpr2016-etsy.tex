@@ -1,10 +1,5 @@
 
 \documentclass[conference,a4paper]{IEEEtran}
-% Add the compsoc option for Computer Society conferences.
-%
-% If IEEEtran.cls has not been installed into the LaTeX system files,
-% manually specify the path to it like:
-% \documentclass[conference]{../sty/IEEEtran}
 
 \usepackage{fullpage}
 \usepackage{amsmath}
@@ -94,7 +89,7 @@ right  = 1in]{geometry}
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
 %some lame title for now
-\title{Image Popularity on Etsy through Hand-crafted Feature Vectors}
+\title{Handcrafted Goods to Handcrafted Image Features: Image Popularity on Etsy}
 
 
 % author names and affiliations
@@ -114,35 +109,6 @@ Ali Shokoufandeh\\
 \emph{Drexel University}\\
 \emph{ashokouf@cs.drexel.edu}}
 
-% conference papers do not typically use \thanks and this command
-% is locked out in conference mode. If really needed, such as for
-% the acknowledgment of grants, issue a \IEEEoverridecommandlockouts
-% after \documentclass
-
-% for over three affiliations, or if they all won't fit within the width
-% of the page, use this alternative format:
-% 
-%\author{\IEEEauthorblockN{Michael Shell\IEEEauthorrefmark{1},
-%Homer Simpson\IEEEauthorrefmark{2},
-%James Kirk\IEEEauthorrefmark{3}, 
-%Montgomery Scott\IEEEauthorrefmark{3} and
-%Eldon Tyrell\IEEEauthorrefmark{4}}
-%\IEEEauthorblockA{\IEEEauthorrefmark{1}School of Electrical and Computer Engineering\\
-%Georgia Institute of Technology,
-%Atlanta, Georgia 30332--0250\\ Email: see http://www.michaelshell.org/contact.html}
-%\IEEEauthorblockA{\IEEEauthorrefmark{2}Twentieth Century Fox, Springfield, USA\\
-%Email: homer@thesimpsons.com}
-%\IEEEauthorblockA{\IEEEauthorrefmark{3}Starfleet Academy, San Francisco, California 96678-2391\\
-%Telephone: (800) 555--1212, Fax: (888) 555--1212}
-%\IEEEauthorblockA{\IEEEauthorrefmark{4}Tyrell Inc., 123 Replicant Street, Los Angeles, California 90210--4321}}
-
-
-
-
-% use for special paper notices
-%\IEEEspecialpapernotice{(Invited Paper)}
-
-
 
 
 % make the title area
@@ -150,23 +116,16 @@ Ali Shokoufandeh\\
 
 \begin{abstract}
 %\boldmath
-The online realm has become a driving force in the retail
-marketplace. E-Commerce websites can provide a level of diversity and
-uniqueness that is impossible in the world of brick-and-mortar
-retail. Etsy is an online marketplace\footnote{\url{www.etsy.com}} for
-artisans selling unique handcrafted goods, and vintage wares that
-couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite{Anderson:2006}. 
- 
-Intuitively, online retail is a visual experience- shoppers have
-particular styles that they find appealing; often images are used as
-first order information when making shopping decisions. There are a
-variety of signals extracted from the images representing those items
-for sale by shoppers. Amongst these, light, color, texture, scene composition
-and aesthetics are important
-cues for visual search and image ranking. In this paper, we introduce a novel
-dataset for user behaviour prediction. We address the problem of
-inferring what makes a listing popular from the pixel-level information of listed images on Etsy.
- We explore the popularity of favorited listings and investigate the entropy of popularity among Etsy users.
+Online retail is a visual experience- Shoppers often use images as the first
+ order information to decide if an item matches their taste. 
+ Image characteristics such as color, scene composition, texture, style, 
+ aesthetics and overall quality play a crucial role in
+  making a purchase decision, clicking on or liking a product listing. 
+
+In this paper we use a set of image features that indicate quality
+   to predict product listings popularity on a major e-commerce website, Etsy~\footnote{\url{www.etsy.com}}.
+   We first define listing popularity on Etsy through search clicks, favoriting and purchase activity. Next, we infer listing quality from the pixel-level information of listed images on Etsy as quality features. We then compare our findings to text-only models for popularity prediction. Our initial results indicate that a combined image and text modeling of product listings on Etsy outperforms text-only models in popularity prediction.
+
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -193,7 +152,11 @@ inferring what makes a listing popular from the pixel-level information of liste
 
 
 \section{Introduction}
-%JOSH
+\kamelia{What is e-commerce and Etsy?}
+
+Etsy is an online marketplace for artisans selling unique handcrafted goods, and vintage wares that
+couldn't be found elsewhere~\. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. 
+
 It is difficult to overstate the importance of online retail and e-commerce. According to the website statista\footnote{\url{http://www.statista.com/statistics/183755/number-of-us-internet-shoppers-since-2009/}}, $190$ million people in the United States alone purchased something online. These purchases covered the spectrum of consumer products- books, clothes, furniture, home goods, electronics, and almost anything else one could imagine. Indeed, the economies of scale provided by online retail enable sales that would otherwise be impossible. If one wants a MiG fighter jet, or a part of the space shuttle, it is available online, provided one knows where to look and that the time is right. 
  
 While online retail seems poised to transform the way people shop, the way shoppers connect with their purchases- through touch, through smell, and through sight, aren't possible with online goods. To bridge these gaps, online retailers have emphasized the visual components of their wares, offering detailed descriptions, and, importantly, rich visual representations of what is for sale in the form of images. Because images offer an unparalleled degree of information density to the shopper, they have become a crucial factor in the online shopping decision process. 
