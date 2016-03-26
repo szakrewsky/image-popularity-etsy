@@ -161,14 +161,12 @@ Intuitively, online retail is a visual experience- shoppers have
 particular styles that they find appealing; often images are used as
 first order information when making shopping decisions. There are a
 variety of signals extracted from the images representing those items
-for sale by shoppers. Amongst these, color composition is an important
-cue for visual search and image ranking- often shoppers have a palette
-of favorite colors, or a mental image of what they're looking for,
-partially determined by color. In this paper, we introduce a novel
+for sale by shoppers. Amongst these, light, color, texture, scene composition
+and aesthetics are important
+cues for visual search and image ranking. In this paper, we introduce a novel
 dataset for user behaviour prediction. We address the problem of
-inferring dominant color composition from the pixel-level color
-distribution of listed images on Etsy.
- We explore the dominant colors of favorited listings and investigate the entropy of colors distribution among Etsy users.
+inferring what makes a listing popular from the pixel-level information of listed images on Etsy.
+ We explore the popularity of favorited listings and investigate the entropy of popularity among Etsy users.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -213,15 +211,13 @@ and aesthetic appeal. Generally, in the setting of unique handmade or vintage go
 search results, high-quality images describing the content of the
 product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. 
  
-In this paper we introduce a mechanism for presenting product listings in terms of the dominant colors used in the images representing those listings. We then explore the correlation between listings' dominant colors and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into an alternative mechanism for interaction, the ``favorite.'' Favorites on Etsy are similar to any number of ``like'' mechanisms available online, the most familiar of which is Facebook's ubiquitous ``thumbs-up.'' By considering what users explicitly express interest in, we are able to form relationships between user preferences and color-based listing features. 
+In this paper we introduce a mechanism for extracting popularity of product listings from the images representing those listings. We then explore the correlation between listings' popularity and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into an alternative mechanism for interaction, the ``favorite.'' Favorites on Etsy are similar to any number of ``like'' mechanisms available online, the most familiar of which is Facebook's ubiquitous ``thumbs-up.'' By considering what users explicitly express interest in, we are able to form relationships between user preferences and popularity-based image features. 
  
 The remainder of the paper is organized as follows:
-Section~\ref{sec:related} discuss related work on color detection and
-visual search. Section~\ref{sec:color} describes dominant product
-listing color detection with object localization. We examine the
-utilization of color unigrams in favorite listings classification in
-section~\ref{sec:classification} and explore dominant color
-distribution entropy among active users in
+Section~\ref{sec:background} discusses background on predicting image popularity.
+Section~\ref{sec:features} describes the features we used to predict populartiy.  We examine the
+performance of popularity features in predicting favorite listings classification in
+section~\ref{sec:classification} and explore the popularity entropy among active users in
 section~\ref{sec:entropy}. Finally, we conclude this paper in
 section~\ref{sec:conclusion} and propose future research directions.
 %JOSH
@@ -246,7 +242,7 @@ could help in ranking the images of varying levels of popularity is becoming an 
 Early work defined popularity as quality~\cite{ke2006design} or aesthetics~\cite{datta2006studying} and use data from photography rating websites where users who have interest in photography upload their photos and rate others.  Popularity has also been defined as memorability~\cite{isola2011makes}, and interestingness~\cite{dhar2011high,gygli2013interestingness}.  More recent work has directly tackled popularity.  In \cite{khosla2014makes}, popularity is defined as the number of views on Flickr, and \cite{aryafar2014exploring} uses favorited listings on Etsy.
 
 \subsection{How to Predict Popularity}
-Popularity tends to be predicted using SVM classification or regression \cite{datta2006studying} \cite{khosla2014makes} \cite{chen2014aesthetic} \cite{wang15automatic}.  Datta et. al. \cite{datta2006studying} uses a two class SVM classifier with a forward selection algorithm to find good feature sets.  By using elastic net to rank feature relevance to aesthetics, and a best first algorithm to find feature sets that minimize the RMSE cross validation error, \cite{wang2015automatic} are able to achieve a 30.1\% improvement compared to \cite{chen2014aesthetic}.  In \cite{ke2006design} a naive Bayes classifier is used, not SVM.  Other recent work has explored other machine learning techniques.  Aryafar et. al \cite{aryafar2014exploring} studied the significance of color in favorited listings on Etsy using logistic regression, perceptron, passive aggressive and margin infused relaxed algorithms.
+Popularity tends to be predicted using SVM classification or regression \cite{datta2006studying} \cite{khosla2014makes} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Datta et. al. \cite{datta2006studying} uses a two class SVM classifier with a forward selection algorithm to find good feature sets.  By using elastic net to rank feature relevance to aesthetics, and a best first algorithm to find feature sets that minimize the RMSE cross validation error, \cite{wang2015automatic} are able to achieve a 30.1\% improvement compared to \cite{chen2014aesthetic}.  A few have explored other machine learning techniques.  In \cite{ke2006design} a naive Bayes classifier is used, not SVM.  Aryafar et. al \cite{aryafar2014exploring} studied the significance of color in favorited listings on Etsy using logistic regression, perceptron, passive aggressive and margin infused relaxed algorithms.
 
 \subsection{Popularity Features}
 The features used in popularity prediction model the same qualities professional photographers use such as light, color, rule of thirds, texture, smoothness, blurriness, depth of field, scene composition \cite{ke2006design} \cite{datta2006studying} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Most of these features are unsupervised, but some such as the spacial edge distribution and color distribution features of \cite{ke2006design} require all of the labeled training data.  Some recent work has looked at semantic object features.  \cite{khosla2014makes} used the popular CNN ImageNet to detect the presence of 1000 difference object categories in the image.  The presence/absence of these categories is used as the feature.
@@ -259,15 +255,15 @@ lighting conditions, scene geometries and background selections. One of
 the key components of e-commerce websites is
 efficient image search and color filtering methods. Presence of occluded backgrounds and highly
 textured material can hinder the accuracy of color detection
-algorithms.  In our work, we define popularity as listings that have been favorited, clicked on, or purchased, and we show that unsupervised image popularity features are statistically significant when combined with traditional text meta-data features in predicting popularity.  In \ref{sec:features} we present the features we used.
+algorithms.  In our work, we define popularity as listings that have been favorited, clicked on, or purchased, and we show that unsupervised image popularity features are statistically significant when combined with traditional text meta-data features in predicting popularity.
 
 \section{Features}
 \label{sec:features}
   \subsection{Simplicity}
-  High quality photos are typically simpler than others.  They often have one subject placed deliberately in the frame.  Sometimes the background is out of focus to emphasize the subject.  Poor quality photographs tend to have cluttered backgrounds and it may be difficult to distinguish the subject of the scene.  We used the four blind measures of simplicity from \cite{ke2006design}.
+  High quality photos are typically simpler than others.  They often have one subject placed deliberately in the frame.  Sometimes the background is out of focus to emphasize the subject.  Poor quality photographs tend to have cluttered backgrounds and it may be difficult to distinguish the subject of the scene.  We used the four measures of simplicity from \cite{ke2006design}, spatial edge distribution, hue count, contrast and lightness, and blur.
 
   \subsubsection{Spatial Edge Distribution}
-  Spatial edge distribution measures how spread out sharp edges are in the image.  A single subject is expected to have a small distribution while an image with a cluttered background would have a large distribution.  Edges are detected by applying a 3x3 Laplacian filter and taking the absolute value.  The filter is applied to each RGB channel independently and the final image is computed as the mean across all three channels.  The Laplacian image is resized to 100x100 and normalized to sum to 1.  Then, the edges are projected onto the x and y axis independently.  Let $w_x$, and $w_y$ be the width of 98\% of the projected edges respectively.  The image quality feature $f_1 = 1 - w_x w_y$ is the percent of area outside the majority of edges.
+  Spatial edge distribution measures how spread out sharp edges are in the image.  A single subject is expected to have a small distribution while an image with a cluttered background would have a large distribution.  Edges are detected by applying a 3x3 Laplacian filter and taking the absolute value.  The filter is applied to each RGB channel independently and the final image is computed as the mean across all three channels.  The Laplacian image is resized to 100x100 and normalized to sum to 1.  Then, the edges are projected onto the x and y axis independently.  Let $w_x$, and $w_y$ be the width of 98\% of the projected edges respectively.  The image quality feature $f = 1 - {w_x w_y \over 100}$ is the percent of area outside the majority of edges.  Figure \ref{fig:sed} shows the edges detected from two different images and their respective feature value.
 
 \begin{figure*}
   \centering
@@ -282,6 +278,7 @@ algorithms.  In our work, we define popularity as listings that have been favori
   \caption{
   The Laplacian image for computing spacial edge distribution for two images.  The feature for figure a. is 0.013 and for b. is 0.30.
   }
+  \label{fig:sed}
 \end{figure*}
 
   \subsubsection{Hue Count}
@@ -291,7 +288,7 @@ algorithms.  In our work, we define popularity as listings that have been favori
   Brightness is a well known variable that professional photographers are trained to understand and adjust.  We use the average brightness feature \cite{ke2006design}, \cite{chen2014aesthetic} computed from the L channel of the Lab color space.  Contrast is similar, and is the ratio of maximum and minimum pixel intensities.  We sum the RGB level histograms, and normalize it to sum to 1.  We use the width of the center 98\% mass of the histogram \cite{ke2006design}.
 
    \subsection{Blur}
-  Blurry images are almost always considered to be of poor quality.  We use the blur features of \cite{ke2006design} and \cite{tong2004blur}.  In \cite{ke2006design} blur is modeled as $I_b = G_\sigma * I$ where $I_b$ is the result of convolving a Gaussian filter with an image.  The larger the $\sigma$ the more high frequencies are removed from the image.  Assuming the frequency distribution of all $I$ is approximately the same, then the maximum frequency $||C||$ can be estimated as $C = \{(u, v) | ||FFT(I_b)|| > \Theta\}$.  The feature is $f = ||C|| \sim 1/\sigma$, after normalizing by the image size.
+  Blurry images are almost always considered to be of poor quality.  We use the blur features of \cite{ke2006design} and \cite{tong2004blur}.  In \cite{ke2006design} blur is modeled as $I_b = G_\sigma * I$ where $I_b$ is the result of convolving a Gaussian filter with an image.  The larger the $\sigma$ the more high frequencies are removed from the image.  Assuming the frequency distribution of all $I$ is approximately the same, then the maximum frequency $||C||$ can be estimated as $C = \{(u, v)\ |\ ||FFT(I_b)|| > \Theta\}$.  The feature is $f = ||C|| \sim 1/\sigma$, after normalizing by the image size.
 
   In \cite{tong2004blur}, blur estimation is done based on changes in the edge structures.  The blur operation will cause gradual edges to lose sharpness.  Assuming that most images have gradual edges that are sharp enough, the blur is measured as the ratio of gradual edges that have lost their sharpness.
 
@@ -300,7 +297,7 @@ algorithms.  In our work, we define popularity as listings that have been favori
   \begin{equation}
     w_i = {\sum_{p \in W_i} w_p \over A(W_i)} .
   \end{equation}
-  To compute the feature, the image is divided into a 5x5 grid with emphasis on the thirds lines; the horizontal and vertical regions centered on the thirds lines are 1/6 of the image size.
+  To compute the feature, the image is divided into a 5x5 grid with emphasis on the thirds lines; the horizontal and vertical regions centered on the thirds lines are 1/6 of the image size.  Figure \ref{fig:rot} shows the saliecy detection with the 5x5 grid overlay, and the thirds map feature for an image.
 
 \begin{figure*}
   \centering
@@ -316,14 +313,22 @@ algorithms.  In our work, we define popularity as listings that have been favori
   \caption{
     Example of Rule of Thirds feature.  Figure b. shows the SR saliency detection, and c. shows the thirds map feature.
   }
+  \label{fig:rot}
 \end{figure*}
 
   \subsection{Texture}
   A smooth image may indicate blur or out-of-focus, and the lack of which may indicate poor film, or too high an ISO setting.  In contrast, texture in the scene is an important composition skill of a photographer.  Smoothness may indicate the lack of texture.  Texture and smoothness are some of the most statically correlated features for quality/popularity \cite{wang2015automatic} and \cite{khosla2014makes}.  We use three smoothness/texture features from these.
 
-  A three level wavelet transform is applied to the L channel of the Lab color space.  We only use the bottom level of the pyramid.  The result is squared to indicate power.  We used the feature $f = {1\over 3MN} \sum_{m=1}^{M}\sum_{n=1}^{N}\sum_{b}w^b(m, n)$ where $b = \{HH, HL, LH\}$ is the bottom level of a wavelet transform and $w$ is the square.  The feature $f = {1\over 3MN} \sum_{m=1}^{M}\sum_{n=1}^{N}l(m, n)$, is also used where $l$ is the second level of a Laplacian pyramid.
+  A three level wavelet transform is applied to the L channel of the Lab color space.  We only use the bottom level of the pyramid.  The result is squared to indicate power.  Let $b = \{HH, HL, LH\}$ be the bottom level of a wavelet transform, the feature is
+  \begin{equation}
+    f = {1\over 3MN} \sum_{m=1}^{M}\sum_{n=1}^{N}\sum_{b}w^b(m, n)
+  \end{equation}
+  where $w$ is the square of the wavelet value.  Because the Laplacian is often used as a pyramid of different scales, another feature
+  \begin{equation}
+    f = {1\over MN} \sum_{m=1}^{M}\sum_{n=1}^{N}l(m, n)
+  \end{equation} is also used.  This time $l$ is the second level from the bottom of a Laplacian pyramid.
 
-  Another texture feature is computed using local binary pattern (LBP).  Then a pyramid of histograms are computed as in \cite{lazebnik2006beyond}.
+  Another texture feature is computed using local binary pattern (LBP).  Then a pyramid of histograms are computed as in \cite{lazebnik2006beyond}.  Figure \ref{fig:tex} shows the similarities of LBP features and the three channels of Daubechies db1 wavelet.
 
 \begin{figure*}
   \centering
@@ -341,17 +346,20 @@ algorithms.  In our work, we define popularity as listings that have been favori
   \caption{
   Smoothness and texture features.  Figure b. shows Local Binary Pattern (LBP) feature image, and c. shows the 3 channels of the DB1 wavelet transform.
   }
+  \label{fig:tex}
 \end{figure*}
 
+
   \subsection{Depth of Field}
-  Depth of field is the distance between between the nearest and farthest objects that appear in sharp focus.  A technique of professional photographers is to use low depth of field to focus on the photographic subject while blurring the background.  We used the feature \cite{datta2006studying} of the ratio of high frequency detail in center regions of the image compared to the entire image.  Let $w$ be the bottom level of a wavelet transform,
+  Depth of field is the distance between between the nearest and farthest objects that appear in sharp focus.  A technique of professional photographers is to use low depth of field to focus on the photographic subject while blurring the background.  We used the feature \cite{datta2006studying} of the ratio of high frequency detail in center regions of the image compared to the entire image.  Let $w$ be the bottom level of a wavelet transform, the feature is
   \begin{equation}
-    f ={\sum_{(x,y)}\in M_6\cup M_7\cup M_{10}\cup M_{11} w(x,y) \over \sum_{i=1}^{16}\sum_{(x,y)\in M_i} w(x,y)} .
+    f ={\sum_{(x,y)}\in M_6\cup M_7\cup M_{10}\cup M_{11} w(x,y) \over \sum_{i=1}^{16}\sum_{(x,y)\in M_i} w(x,y)} ,
   \end{equation}
-  The same feature is reapplied using the Laplacian pyramid $l$ instead of $w$ \cite{wang2015automatic}.  These features only look at the center region of the image.  A third feature \cite{wang2015automatic} looks at the spacial distribution of high frequency details.  Let $l$ be the bottom layer of a Laplacian pyramid,
-  \begin{equation}
+  where $M_i | 1 \le i \le 16$ are the cells of a 4x4 grid.  The same feature is also reapplied using the Laplacian pyramid $l$ instead of $w$ \cite{wang2015automatic}.  These features only look at the center region of the image.  A third feature \cite{wang2015automatic} looks at the spacial distribution of high frequency details.  Let $l$ be the bottom layer of a Laplacian pyramid and $c_{row}, c_{col}$ are the center of mass, the feature is
+  \begin{equation} 
     f = {1 \over MN} \sum_{m=1}^M\sum_{n=1}^N l(m,n)\sqrt{(m-c_{row})^2 + (n-c_{col})^2} .
   \end{equation}
+  Figure \ref{fig:lowdof} visualizes how these features are computed for an image.
 
   \subsection{Experimental}
   Maximally Stable Extremal Regions (MSER) \cite{matas2004robust} can be used to detect text because characters are typically single solid colors with sharp edges that standout from the background \cite{chen2011robust}.  Additionally, texture patterns are also often detected by MSER, like bricks on a wall.  We used the experimental feature the count of the number of MSER regions.  We would like to continue this experiment into other features based on text in images.
@@ -393,6 +401,7 @@ color tags and are available through Etsy's API\footnote{\url{www.etsy.com/devel
   \caption{
   Figure b. shows the Low Depth of Field features in the center grid region for the Laplacian image.  Figure c. shows the same image with its center of mass.
   }
+  \label{fig:lowdof}
 \end{figure*}
 
 
