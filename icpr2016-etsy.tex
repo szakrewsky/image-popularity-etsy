@@ -30,6 +30,9 @@
 \usepackage{subfloat}
 \usepackage{times}
 \usepackage{balance}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
 \usepackage[
 top    = 0.75 in,
 bottom = 2in,
@@ -83,6 +86,17 @@ right  = 1in]{geometry}
 
 \newcommand{\etc}{etc.~}
 \newcommand{\etal}{et al.~}
+\newcommand{\footlabel}[2]{%
+    \addtocounter{footnote}{1}%
+    \footnotetext[\thefootnote]{%
+        \addtocounter{footnote}{-1}%
+        \refstepcounter{footnote}\label{#1}%
+        #2%
+    }%
+    $^{\ref{#1}}$%
+}
+
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
 
 \hyphenation{op-tical net-works semi-conduc-tor}
 
@@ -126,7 +140,7 @@ Online retail is a visual experience- Shoppers often use images as the first
   making a purchase decision, clicking on or liking a product listing. 
 
 In this paper we use a set of image features that indicate quality
-   to predict product listings popularity on a major e-commerce website, Etsy~\footnote{\url{www.etsy.com}}.
+   to predict product listings popularity on a major e-commerce website, Etsy~\footlabel{etsyurl}{\url{www.etsy.com}}.
    We first define listing popularity on Etsy through search clicks, favoriting and purchase activity. Next, we infer listing quality from the pixel-level information of listed images on Etsy as quality features. We then compare our findings to text-only models for popularity prediction. Our initial results indicate that a combined image and text modeling of product listings on Etsy outperforms text-only models in popularity prediction.
 
 \end{abstract}
@@ -159,12 +173,14 @@ The informative presentation of product listings through text and
 images is the foundation of e-commerce websites. Shoppers often have a 
 specific style or visual preference for many of the available items such as jewelry, clothing, home decor and etc. 
 Images provide the first order information for product listings. 
-Users usually use images in combination with textual description, price, ratings and \etc to decide if an item is a suitable match for what they need and have in mind. The selection of proper high quality images is then an important step in listing a successful product. In this paper we examine the role of image quality in a listing popularity on a major e-commerce website, Etsy~\footnote{\url{www.etsy.com}}.
+Users usually use images in combination with textual description, price, ratings and \etc to decide if an item is a suitable match for what they need and have in mind. The selection of proper high quality images is then an important step in listing a successful product. In this paper we examine the role of image quality in a listing popularity on a major e-commerce website, Etsy~\footref{etsyurl}.
 
 
 
 Etsy is an online marketplace for artisans selling unique handcrafted goods, and vintage wares that
-couldn't be found elsewhere~\. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, nearly $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in an e-commerce settings. 
+couldn't be found elsewhere~\. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, nearly $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in an e-commerce settings. Each Etsy listing is composed of text information such as title, tags, item description, shop and seller name and complementary images.
+
+
 
 
 Importantly, with the proliferation of mobile devices, the text that has dominated conventional information retrieval for the past 15 years has become burden- users are driven by visual experiences rather than through the input and consumption of text. This reliance on visual stimuli has spurred a great interest in new ways to expand textual search into visual search. In doing so, one must understand the behavior of shoppers surrounding images.
