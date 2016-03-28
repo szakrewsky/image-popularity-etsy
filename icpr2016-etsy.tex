@@ -157,8 +157,7 @@ In this paper we use a set of image features that indicate quality
 Etsy is an online marketplace for artisans selling unique handcrafted goods, and vintage wares that
 couldn't be found elsewhere~\. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. 
 
-It is difficult to overstate the importance of online retail and e-commerce. According to the website statista\footnote{\url{http://www.statista.com/statistics/183755/number-of-us-internet-shoppers-since-2009/}}, $190$ million people in the United States alone purchased something online. These purchases covered the spectrum of consumer products- books, clothes, furniture, home goods, electronics, and almost anything else one could imagine. Indeed, the economies of scale provided by online retail enable sales that would otherwise be impossible. If one wants a MiG fighter jet, or a part of the space shuttle, it is available online, provided one knows where to look and that the time is right. 
- 
+It is difficult to overstate the importance of online retail and e-commerce.
 While online retail seems poised to transform the way people shop, the way shoppers connect with their purchases- through touch, through smell, and through sight, aren't possible with online goods. To bridge these gaps, online retailers have emphasized the visual components of their wares, offering detailed descriptions, and, importantly, rich visual representations of what is for sale in the form of images. Because images offer an unparalleled degree of information density to the shopper, they have become a crucial factor in the online shopping decision process. 
  
 This paper presents techniques for improving and understanding the online shopping experience at a major e-commerce website, Etsy. Rather than act as a retailer of goods, Etsy is a marketplace, where over a million individual sellers can set up shop, and market their own goods to a shopping community of many millions of people in over 180 countries. Currently in this marketplace, there are over 30 million unique items for sale (listings), and well over 90 million unique images representing these items. With such an expansive image dataset, Etsy is uniquely poised to present users with a rich visual experience. 
@@ -327,7 +326,8 @@ algorithms.  In our work, we define popularity as listings that have been favori
   \subsection{Experimental}
   Maximally Stable Extremal Regions (MSER) \cite{matas2004robust} can be used to detect text because characters are typically single solid colors with sharp edges that standout from the background \cite{chen2011robust}.  Additionally, texture patterns are also often detected by MSER, like bricks on a wall.  We used the experimental feature the count of the number of MSER regions.  We would like to continue this experiment into other features based on text in images.
  
-\section{User Behaviour and Colors}
+ \kamelia{fix from here on\\}
+\section{Popularity and Quality Features}
 \label{sec:experiments}
 In this section we present the unique dataset for quantitative evaluation of colors
 impact in user behaviour on Etsy. Once an item is listed on Etsy, the
