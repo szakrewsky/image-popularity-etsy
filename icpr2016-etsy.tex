@@ -178,22 +178,10 @@ Users usually use images in combination with textual description, price, ratings
 
 
 Etsy is an online marketplace for artisans selling unique handcrafted goods, and vintage wares that
-couldn't be found elsewhere~\. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, nearly $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in an e-commerce settings. Each Etsy listing is composed of text information such as title, tags, item description, shop and seller name and complementary images.
+couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, nearly $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in an e-commerce setting. Each Etsy listing is composed of text information such as title, tags, item description, shop and seller name and complementary images. For a product listing to stand out, high-quality images describing the content of the product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. 
 
 
 
-
-Importantly, with the proliferation of mobile devices, the text that has dominated conventional information retrieval for the past 15 years has become burden- users are driven by visual experiences rather than through the input and consumption of text. This reliance on visual stimuli has spurred a great interest in new ways to expand textual search into visual search. In doing so, one must understand the behavior of shoppers surrounding images.
- 
-The presentation of product listings through images plays
-an important role on commerce websites. Conventional text-based  product search relies heavily on the similarity between 
-the query input by a user and the textual metadata describing what is for sale- listing tags, titles, descriptions, etc. All information added by those users who have listed what is for sale. These search
-results might include a large number of relevant product listings, all of them
-containing very similar tags, but with varying levels of image quality
-and aesthetic appeal. Generally, in the setting of unique handmade or vintage goods, this text-based approach to shopping might yield high recall, but low precision. For a product listing to stand out among query-based
-search results, high-quality images describing the content of the
-product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. 
- 
 In this paper we introduce a mechanism for extracting popularity of product listings from the images representing those listings. We then explore the correlation between listings' popularity and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into an alternative mechanism for interaction, the ``favorite.'' Favorites on Etsy are similar to any number of ``like'' mechanisms available online, the most familiar of which is Facebook's ubiquitous ``thumbs-up.'' By considering what users explicitly express interest in, we are able to form relationships between user preferences and popularity-based image features. 
  
 The remainder of the paper is organized as follows:
@@ -207,30 +195,12 @@ section~\ref{sec:conclusion} and propose future research directions.
 
 \section{Background}
 \label{sec:background}
-Recent advances in multimedia industry have redefined the dynamics of
-e-commerce. Tens of millions or even billions of product listings and associated listings images are
-available in a large online market place. These massive datasets require various methods for acquiring, processing,
-analyzing, and understanding images in order to produce numerical or symbolic
-information, such as color and texture characteristics that can be used for content based image search and retrieval~\cite{
-  bhardwajpalette,zhou2012document,faloutsos1994efficient}. 
-Various global image features such as color histograms~\cite{rao1999spatial}, texture
-values~\cite{haralick1979statistical} and shape parameters of easily segmentable regions~\cite{niblack1993qbic} and localized features such
-as scale invariant feature transform (SIFT) ~\cite{lowe2004distinctive}, speeded up
-robust features (SURF)~\cite{bay2006surf} and histogram of oriented gradients (HOG)
-~\cite{dalal2005histograms} are proposed for image content retrieval
-and search.  With content-based image retrieval on the rise, the study of cues that
-could help in ranking the images of varying levels of popularity is becoming an important problem.
+Early work in the literature has defined popularity as quality~\cite{ke2006design} or aesthetics~\cite{datta2006studying} and use data from photography rating websites where users who have interest in photography upload their photos and rate others.  Popularity has also been defined as memorability~\cite{isola2011makes}, and interestingness~\cite{dhar2011high,gygli2013interestingness}.  More recent work has directly tackled popularity.  In \cite{khosla2014makes}, popularity is defined as the number of views on Flickr, and \cite{aryafar2014exploring} uses favorited listings on Etsy.
 
-\subsection{What is Popularity?}
-Early work defined popularity as quality~\cite{ke2006design} or aesthetics~\cite{datta2006studying} and use data from photography rating websites where users who have interest in photography upload their photos and rate others.  Popularity has also been defined as memorability~\cite{isola2011makes}, and interestingness~\cite{dhar2011high,gygli2013interestingness}.  More recent work has directly tackled popularity.  In \cite{khosla2014makes}, popularity is defined as the number of views on Flickr, and \cite{aryafar2014exploring} uses favorited listings on Etsy.
-
-\subsection{How to Predict Popularity}
 Popularity tends to be predicted using SVM classification or regression \cite{datta2006studying} \cite{khosla2014makes} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Datta et. al. \cite{datta2006studying} uses a two class SVM classifier with a forward selection algorithm to find good feature sets.  By using elastic net to rank feature relevance to aesthetics, and a best first algorithm to find feature sets that minimize the RMSE cross validation error, \cite{wang2015automatic} are able to achieve a 30.1\% improvement compared to \cite{chen2014aesthetic}.  A few have explored other machine learning techniques.  In \cite{ke2006design} a naive Bayes classifier is used, not SVM.  Aryafar et. al \cite{aryafar2014exploring} studied the significance of color in favorited listings on Etsy using logistic regression, perceptron, passive aggressive and margin infused relaxed algorithms.
 
-\subsection{Popularity Features}
 The features used in popularity prediction model the same qualities professional photographers use such as light, color, rule of thirds, texture, smoothness, blurriness, depth of field, scene composition \cite{ke2006design} \cite{datta2006studying} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Most of these features are unsupervised, but some such as the spacial edge distribution and color distribution features of \cite{ke2006design} require all of the labeled training data.  Some recent work has looked at semantic object features.  \cite{khosla2014makes} used the popular CNN ImageNet to detect the presence of 1000 difference object categories in the image.  The presence/absence of these categories is used as the feature.
 
-\subsection{Our Approach}
 With more than 30 million active listings and over 90 million listing images, Etsy provides a unique visually enticing experience
 for users. Because images are uploaded by users of the site,
 representing the myriad items for sale, these images are composed of different items, presented with various
@@ -251,12 +221,14 @@ algorithms.  In our work, we define popularity as listings that have been favori
 \begin{figure*}
   \centering
   \subfigure[]{
-    \includegraphics[width=0.25\textwidth]{./figures/dress_il_fullxfull_927681771_b525.jpg}
-    \includegraphics[width=0.25\textwidth]{./figures/dress_sed.png}
+    \includegraphics[scale=0.25]{./figures/dress_il_fullxfull_927681771_b525.jpg}
+    \hspace{4.1mm}
+    \includegraphics[height=0.235\textheight]{./figures/dress_sed.png}
   }
   \subfigure[]{
-    \includegraphics[width=0.25\textwidth]{./figures/flowers_il_fullxfull_719383783_7d69.jpg}
-    \includegraphics[width=0.25\textwidth]{./figures/flowers_sed.png}
+    \includegraphics[scale=0.26]{./figures/flowers_il_fullxfull_719383783_7d69.jpg}
+    \hspace{7mm}
+    \includegraphics[scale=0.152]{./figures/flowers_sed.png}
   }
   \caption{
   The Laplacian image for computing spacial edge distribution for two images.  The feature for figure a. is 0.013 and for b. is 0.30.
@@ -291,7 +263,7 @@ algorithms.  In our work, we define popularity as listings that have been favori
     \includegraphics[width=0.3\textwidth]{./figures/frames_saliency.png}
   }
   \subfigure[]{
-    \includegraphics[width=0.3\textwidth]{./figures/frames_rot.png}
+    \includegraphics[width=0.2\textwidth]{./figures/frames_rot.png}
   }
   \caption{
     Example of Rule of Thirds feature.  Figure b. shows the SR saliency detection, and c. shows the thirds map feature.
@@ -377,7 +349,7 @@ color tags and are available through Etsy's API\footnote{\url{www.etsy.com/devel
     \includegraphics[width=0.3\textwidth]{./figures/spoons_il_fullxfull_661851396_jppy.jpg}
   }
   \subfigure[]{
-    \includegraphics[width=0.3\textwidth]{./figures/spoons_laplacian_low_dof.png}
+    \includegraphics[width=0.304\textwidth]{./figures/spoons_laplacian_low_dof.png}
   }
   \subfigure[]{
     \includegraphics[width=0.3\textwidth]{./figures/spoons_laplacian_low_dof_swd.png}

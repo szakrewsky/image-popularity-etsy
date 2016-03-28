@@ -42,57 +42,6 @@ P.~Obrador, X.~Anguera, R.~de~Oliveira, and N.~Oliver, ``The role of tags and
   SIGMM workshop on Social media}.\hskip 1em plus 0.5em minus 0.4em\relax ACM,
   2009, pp. 65--72.
 
-\bibitem{bhardwajpalette}
-A.~Bhardwaj, A.~D. Sarma, W.~Di, R.~Hamid, R.~Piramuthu, and N.~Sundaresan,
-  ``Palette power: Enabling visual search through colors.''
-
-\bibitem{zhou2012document}
-C.~Zhou, Y.~Li, B.~Geng, and C.~Xu, ``From document to image: Learning a
-  scalable ranking model for content based image retrieval,'' in
-  \emph{Multimedia and Expo Workshops (ICMEW), 2012 IEEE International
-  Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2012, pp.
-  558--563.
-
-\bibitem{faloutsos1994efficient}
-C.~Faloutsos, R.~Barber, M.~Flickner, J.~Hafner, W.~Niblack, D.~Petkovic, and
-  W.~Equitz, ``Efficient and effective querying by image content,''
-  \emph{Journal of intelligent information systems}, vol.~3, no. 3-4, pp.
-  231--262, 1994.
-
-\bibitem{rao1999spatial}
-A.~Rao, R.~K. Srihari, and Z.~Zhang, ``Spatial color histograms for
-  content-based image retrieval,'' in \emph{Tools with Artificial Intelligence,
-  1999. Proceedings. 11th IEEE International Conference on}.\hskip 1em plus
-  0.5em minus 0.4em\relax IEEE, 1999, pp. 183--186.
-
-\bibitem{haralick1979statistical}
-R.~M. Haralick, ``Statistical and structural approaches to texture,''
-  \emph{Proceedings of the IEEE}, vol.~67, no.~5, pp. 786--804, 1979.
-
-\bibitem{niblack1993qbic}
-C.~W. Niblack, R.~Barber, W.~Equitz, M.~D. Flickner, E.~H. Glasman,
-  D.~Petkovic, P.~Yanker, C.~Faloutsos, and G.~Taubin, ``Qbic project: querying
-  images by content, using color, texture, and shape,'' in \emph{IS\&T/SPIE's
-  Symposium on Electronic Imaging: Science and Technology}.\hskip 1em plus
-  0.5em minus 0.4em\relax International Society for Optics and Photonics, 1993,
-  pp. 173--187.
-
-\bibitem{lowe2004distinctive}
-D.~G. Lowe, ``Distinctive image features from scale-invariant keypoints,''
-  \emph{International journal of computer vision}, vol.~60, no.~2, pp. 91--110,
-  2004.
-
-\bibitem{bay2006surf}
-H.~Bay, T.~Tuytelaars, and L.~Van~Gool, ``Surf: Speeded up robust features,''
-  in \emph{Computer Vision--ECCV 2006}.\hskip 1em plus 0.5em minus 0.4em\relax
-  Springer, 2006, pp. 404--417.
-
-\bibitem{dalal2005histograms}
-N.~Dalal and B.~Triggs, ``Histograms of oriented gradients for human
-  detection,'' in \emph{Computer Vision and Pattern Recognition, 2005. CVPR
-  2005. IEEE Computer Society Conference on}, vol.~1.\hskip 1em plus 0.5em
-  minus 0.4em\relax IEEE, 2005, pp. 886--893.
-
 \bibitem{ke2006design}
 Y.~Ke, X.~Tang, and F.~Jing, ``The design of high-level features for photo
   quality assessment,'' in \emph{Computer Vision and Pattern Recognition, 2006
