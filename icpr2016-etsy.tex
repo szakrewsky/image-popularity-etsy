@@ -81,6 +81,9 @@ right  = 1in]{geometry}
 \newcommand{\steve}[3]{{\colod{green}}}
 \newcommand{\ali}[2]{{\color{red}{#1~}}}
 
+\newcommand{\etc}{etc.~}
+\newcommand{\etal}{et al.~}
+
 \hyphenation{op-tical net-works semi-conduc-tor}
 
 
@@ -152,16 +155,18 @@ In this paper we use a set of image features that indicate quality
 
 
 \section{Introduction}
-\kamelia{What is e-commerce and Etsy?}
+The informative presentation of product listings through text and 
+images is the foundation of e-commerce websites. Shoppers often have a 
+specific style or visual preference for many of the available items such as jewelry, clothing, home decor and etc. 
+Images provide the first order information for product listings. 
+Users usually use images in combination with textual description, price, ratings and \etc to decide if an item is a suitable match for what they need and have in mind. The selection of proper high quality images is then an important step in listing a successful product. In this paper we examine the role of image quality in a listing popularity on a major e-commerce website, Etsy~\footnote{\url{www.etsy.com}}.
+
+
 
 Etsy is an online marketplace for artisans selling unique handcrafted goods, and vintage wares that
-couldn't be found elsewhere~\. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. 
+couldn't be found elsewhere~\. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, nearly $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in an e-commerce settings. 
 
-It is difficult to overstate the importance of online retail and e-commerce.
-While online retail seems poised to transform the way people shop, the way shoppers connect with their purchases- through touch, through smell, and through sight, aren't possible with online goods. To bridge these gaps, online retailers have emphasized the visual components of their wares, offering detailed descriptions, and, importantly, rich visual representations of what is for sale in the form of images. Because images offer an unparalleled degree of information density to the shopper, they have become a crucial factor in the online shopping decision process. 
- 
-This paper presents techniques for improving and understanding the online shopping experience at a major e-commerce website, Etsy. Rather than act as a retailer of goods, Etsy is a marketplace, where over a million individual sellers can set up shop, and market their own goods to a shopping community of many millions of people in over 180 countries. Currently in this marketplace, there are over 30 million unique items for sale (listings), and well over 90 million unique images representing these items. With such an expansive image dataset, Etsy is uniquely poised to present users with a rich visual experience. 
- 
+
 Importantly, with the proliferation of mobile devices, the text that has dominated conventional information retrieval for the past 15 years has become burden- users are driven by visual experiences rather than through the input and consumption of text. This reliance on visual stimuli has spurred a great interest in new ways to expand textual search into visual search. In doing so, one must understand the behavior of shoppers surrounding images.
  
 The presentation of product listings through images plays

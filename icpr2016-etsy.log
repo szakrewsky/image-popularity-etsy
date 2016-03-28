@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/MacPorts 2015_7) (preloaded format=pdflatex 2015.10.22)  28 MAR 2016 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/MacPorts 2015_7) (preloaded format=pdflatex 2015.10.22)  28 MAR 2016 11:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -593,58 +593,58 @@ LaTeX Warning: Label `tab:classification accuracy' multiply defined.
 )
 \openout1 = `icpr2016-etsy.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
-LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 87.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 90.
  (/opt/local/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
@@ -739,11 +739,11 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 126.
+LaTeX Font Info:    Try loading font information for U+msa on input line 129.
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 126.
+LaTeX Font Info:    Try loading font information for U+msb on input line 129.
 
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -754,152 +754,154 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 228.
+(amsmath)                 on input line 233.
 
 [2]
-<./figures/dress_il_fullxfull_927681771_b525.jpg, id=13, 404.51125pt x 606.265p
+<./figures/dress_il_fullxfull_927681771_b525.jpg, id=16, 404.51125pt x 606.265p
 t>
 File: ./figures/dress_il_fullxfull_927681771_b525.jpg Graphic file (type jpg)
  <use ./figures/dress_il_fullxfull_927681771_b525.jpg>
 Package pdftex.def Info: ./figures/dress_il_fullxfull_927681771_b525.jpg used o
-n input line 235.
+n input line 240.
 (pdftex.def)             Requested size: 113.24197pt x 169.71603pt.
 
-<./figures/dress_sed.png, id=14, 705.63625pt x 703.62875pt>
+<./figures/dress_sed.png, id=17, 705.63625pt x 703.62875pt>
 File: ./figures/dress_sed.png Graphic file (type png)
 
 <use ./figures/dress_sed.png>
-Package pdftex.def Info: ./figures/dress_sed.png used on input line 235.
+Package pdftex.def Info: ./figures/dress_sed.png used on input line 240.
 (pdftex.def)             Requested size: 113.24197pt x 112.91573pt.
 
-<./figures/flowers_il_fullxfull_719383783_7d69.jpg, id=16, 537.00626pt x 410.53
+<./figures/flowers_il_fullxfull_719383783_7d69.jpg, id=19, 537.00626pt x 410.53
 375pt>
 File: ./figures/flowers_il_fullxfull_719383783_7d69.jpg Graphic file (type jpg)
 
  <use ./figures/flowers_il_fullxfull_719383783_7d69.jpg>
 Package pdftex.def Info: ./figures/flowers_il_fullxfull_719383783_7d69.jpg used
- on input line 239.
+ on input line 244.
 (pdftex.def)             Requested size: 113.24197pt x 86.57169pt.
 
-<./figures/flowers_sed.png, id=17, 705.63625pt x 704.6325pt>
+<./figures/flowers_sed.png, id=20, 705.63625pt x 704.6325pt>
 File: ./figures/flowers_sed.png Graphic file (type png)
 
 <use ./figures/flowers_sed.png>
-Package pdftex.def Info: ./figures/flowers_sed.png used on input line 239.
+Package pdftex.def Info: ./figures/flowers_sed.png used on input line 244.
 (pdftex.def)             Requested size: 113.24197pt x 113.07681pt.
 
-Underfull \hbox (badness 1642) in paragraph at lines 247--248
+Underfull \hbox (badness 1642) in paragraph at lines 252--253
  []\T1/ptm/m/it/10 Hue Count: [][] \T1/ptm/m/n/10 Pro-fes-sional pho-tographs l
 ook
  []
 
 
-<./figures/frames_il_fullxfull_732324506_py81.jpg, id=18, 361.35pt x 239.9364pt
+<./figures/frames_il_fullxfull_732324506_py81.jpg, id=21, 361.35pt x 239.9364pt
 >
 File: ./figures/frames_il_fullxfull_732324506_py81.jpg Graphic file (type jpg)
  <use ./figures/frames_il_fullxfull_732324506_py81.jpg>
 Package pdftex.def Info: ./figures/frames_il_fullxfull_732324506_py81.jpg used 
-on input line 268.
+on input line 273.
 (pdftex.def)             Requested size: 135.89174pt x 90.2322pt.
 
-<./figures/frames_saliency.png, id=19, 1060.96375pt x 702.625pt>
+<./figures/frames_saliency.png, id=22, 1060.96375pt x 702.625pt>
 File: ./figures/frames_saliency.png Graphic file (type png)
 
 <use ./figures/frames_saliency.png>
-Package pdftex.def Info: ./figures/frames_saliency.png used on input line 271.
+Package pdftex.def Info: ./figures/frames_saliency.png used on input line 276.
 (pdftex.def)             Requested size: 135.89174pt x 89.99358pt.
 
-<./figures/frames_rot.png, id=20, 703.62875pt x 702.625pt>
+<./figures/frames_rot.png, id=23, 703.62875pt x 702.625pt>
 File: ./figures/frames_rot.png Graphic file (type png)
 
 <use ./figures/frames_rot.png>
-Package pdftex.def Info: ./figures/frames_rot.png used on input line 274.
+Package pdftex.def Info: ./figures/frames_rot.png used on input line 279.
 (pdftex.def)             Requested size: 135.89174pt x 135.69797pt.
 
-<./figures/purse_il_fullxfull_528061813_4lgo.jpg, id=21, 512.314pt x 369.7815pt
+<./figures/purse_il_fullxfull_528061813_4lgo.jpg, id=24, 512.314pt x 369.7815pt
 >
 File: ./figures/purse_il_fullxfull_528061813_4lgo.jpg Graphic file (type jpg)
  <use ./figures/purse_il_fullxfull_528061813_4lgo.jpg>
 Package pdftex.def Info: ./figures/purse_il_fullxfull_528061813_4lgo.jpg used o
-n input line 299.
+n input line 304.
 (pdftex.def)             Requested size: 135.89174pt x 98.0819pt.
 
-<./figures/purse_lbp.png, id=22, 975.645pt x 702.625pt>
+<./figures/purse_lbp.png, id=25, 975.645pt x 702.625pt>
 File: ./figures/purse_lbp.png Graphic file (type png)
 
 <use ./figures/purse_lbp.png>
-Package pdftex.def Info: ./figures/purse_lbp.png used on input line 302.
+Package pdftex.def Info: ./figures/purse_lbp.png used on input line 307.
 (pdftex.def)             Requested size: 135.89174pt x 97.86293pt.
 
-<./figures/purse_db10.png, id=23, 974.64125pt x 701.62125pt>
+<./figures/purse_db10.png, id=26, 974.64125pt x 701.62125pt>
 File: ./figures/purse_db10.png Graphic file (type png)
 
 <use ./figures/purse_db10.png>
-Package pdftex.def Info: ./figures/purse_db10.png used on input line 307.
+Package pdftex.def Info: ./figures/purse_db10.png used on input line 312.
 (pdftex.def)             Requested size: 135.89174pt x 97.81947pt.
 
-<./figures/purse_db11.png, id=24, 973.6375pt x 701.62125pt>
+<./figures/purse_db11.png, id=27, 973.6375pt x 701.62125pt>
 File: ./figures/purse_db11.png Graphic file (type png)
 
 <use ./figures/purse_db11.png>
-Package pdftex.def Info: ./figures/purse_db11.png used on input line 307.
+Package pdftex.def Info: ./figures/purse_db11.png used on input line 312.
 (pdftex.def)             Requested size: 135.89174pt x 97.92653pt.
 
-<./figures/purse_db12.png, id=25, 974.64125pt x 703.62875pt>
+<./figures/purse_db12.png, id=28, 974.64125pt x 703.62875pt>
 File: ./figures/purse_db12.png Graphic file (type png)
 
 <use ./figures/purse_db12.png>
-Package pdftex.def Info: ./figures/purse_db12.png used on input line 307.
+Package pdftex.def Info: ./figures/purse_db12.png used on input line 312.
 (pdftex.def)             Requested size: 135.89174pt x 98.09937pt.
  [3] [4 <./figures/dress_il_fullxfull_927681771_b525.jpg> <./figures/dress_sed.
 png> <./figures/flowers_il_fullxfull_719383783_7d69.jpg> <./figures/flowers_sed
 .png> <./figures/frames_il_fullxfull_732324506_py81.jpg> <./figures/frames_sali
 ency.png> <./figures/frames_rot.png>]
-Overfull \hbox (13.96182pt too wide) detected at line 323
+Overfull \hbox (13.96182pt too wide) detected at line 328
 \OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = [] [] [] \OML/cmm/m/it/10 l\OT1/cmr/m/n/10
  (\OML/cmm/m/it/10 m; n\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 :
  []
 
-[5 <./figures/purse_il_fullxfull_528061813_4lgo.jpg> <./figures/purse_lbp.png> 
-<./figures/purse_db10.png> <./figures/purse_db11.png> <./figures/purse_db12.png
->]
-<./figures/spoons_il_fullxfull_661851396_jppy.jpg, id=51, 1505.625pt x 1001.742
+
+<./figures/spoons_il_fullxfull_661851396_jppy.jpg, id=44, 1505.625pt x 1001.742
 5pt>
 File: ./figures/spoons_il_fullxfull_661851396_jppy.jpg Graphic file (type jpg)
  <use ./figures/spoons_il_fullxfull_661851396_jppy.jpg>
 Package pdftex.def Info: ./figures/spoons_il_fullxfull_661851396_jppy.jpg used 
-on input line 357.
+on input line 362.
 (pdftex.def)             Requested size: 135.89174pt x 90.41278pt.
 
-<./figures/spoons_laplacian_low_dof.png, id=52, 322.20375pt x 211.79124pt>
+<./figures/spoons_laplacian_low_dof.png, id=45, 322.20375pt x 211.79124pt>
 File: ./figures/spoons_laplacian_low_dof.png Graphic file (type png)
 
 <use ./figures/spoons_laplacian_low_dof.png>
 Package pdftex.def Info: ./figures/spoons_laplacian_low_dof.png used on input l
-ine 360.
+ine 365.
 (pdftex.def)             Requested size: 135.89174pt x 89.32658pt.
 
-<./figures/spoons_laplacian_low_dof_swd.png, id=53, 321.2pt x 213.79875pt>
+<./figures/spoons_laplacian_low_dof_swd.png, id=46, 321.2pt x 213.79875pt>
 File: ./figures/spoons_laplacian_low_dof_swd.png Graphic file (type png)
 
 <use ./figures/spoons_laplacian_low_dof_swd.png>
 Package pdftex.def Info: ./figures/spoons_laplacian_low_dof_swd.png used on inp
-ut line 363.
+ut line 368.
 (pdftex.def)             Requested size: 135.89174pt x 90.45384pt.
+ [5 <./figures/purse_il_fullxfull_528061813_4lgo.jpg> <./figures/purse_lbp.png>
+ <./figures/purse_db10.png> <./figures/purse_db11.png> <./figures/purse_db12.pn
+g>]
+
+LaTeX Warning: Reference `fig:chart' on page 6 undefined on input line 460.
 
 
-LaTeX Warning: Reference `fig:chart' on page 6 undefined on input line 455.
+LaTeX Warning: Reference `fig:chart' on page 6 undefined on input line 461.
 
 
-LaTeX Warning: Reference `fig:chart' on page 6 undefined on input line 456.
+LaTeX Warning: Reference `fig:aaa' on page 6 undefined on input line 465.
 
 
-LaTeX Warning: Reference `fig:aaa' on page 6 undefined on input line 460.
+LaTeX Warning: Reference `fig:bbb' on page 6 undefined on input line 467.
 
-
-LaTeX Warning: Reference `fig:bbb' on page 6 undefined on input line 462.
-
-(./icpr2016-etsy.bbl [6])
+[6 <./figures/spoons_il_fullxfull_661851396_jppy.jpg> <./figures/spoons_laplaci
+an_low_dof.png> <./figures/spoons_laplacian_low_dof_swd.png>]
+(./icpr2016-etsy.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -911,9 +913,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7 <./figures/spoons_il_fullxfull_661851396_jppy.jpg> <./figures/spoons_laplaci
-an_low_dof.png> <./figures/spoons_laplacian_low_dof_swd.png>]
-(./icpr2016-etsy.aux)
+[7] (./icpr2016-etsy.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -922,10 +922,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5892 strings out of 494185
- 88590 string characters out of 6156887
- 161305 words of memory out of 5000000
- 9050 multiletter control sequences out of 15000+600000
+ 5894 strings out of 494185
+ 88597 string characters out of 6156887
+ 158321 words of memory out of 5000000
+ 9052 multiletter control sequences out of 15000+600000
  118189 words of font info for 137 fonts, out of 8000000 for 9000
  433 hyphenation exceptions out of 8191
  38i,11n,38p,937b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -942,7 +942,7 @@ cmsy7.pfb></opt/local/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></op
 t/local/share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></opt/local/share
 /texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></opt/local/share/texmf-texlive
 /fonts/type1/urw/times/utmri8a.pfb>
-Output written on icpr2016-etsy.pdf (7 pages, 2944940 bytes).
+Output written on icpr2016-etsy.pdf (7 pages, 2944697 bytes).
 PDF statistics:
  107 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
