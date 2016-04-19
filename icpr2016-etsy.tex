@@ -106,7 +106,7 @@ right  = 1in]{geometry}
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
 %some lame title for now
-\title{Handcrafted Goods to Handcrafted Image Features: Image Popularity on Etsy}
+\title{Item Popularity Prediction in E-commerce Using Image Quality Featutre Vectors}
 
 
 % author names and affiliations
@@ -119,7 +119,7 @@ Stephen Zakrewsky\\
 \emph{sz372@drexel.edu}
 \and
 Kamelia Aryafar\\ 
-\emph {Etsy Inc.}\\
+\emph {Etsy}\\
 \emph {karyafar@etsy.com}
 \and
 Ali Shokoufandeh\\
@@ -137,11 +137,9 @@ Online retail is a visual experience- Shoppers often use images as the first
  order information to decide if an item matches their taste. 
  Image characteristics such as color, scene composition, texture, style, 
  aesthetics and overall quality play a crucial role in
-  making a purchase decision, clicking on or liking a product listing. 
-
-In this paper we use a set of image features that indicate quality
+  making a purchase decision, clicking on or liking a product listing. In this paper we use a set of image features that indicate quality
    to predict product listings popularity on a major e-commerce website, Etsy~\footlabel{etsyurl}{\url{www.etsy.com}}.
-   We first define listing popularity on Etsy through search clicks, favoriting and purchase activity. Next, we infer listing quality from the pixel-level information of listed images on Etsy as quality features. We then compare our findings to text-only models for popularity prediction. Our initial results indicate that a combined image and text modeling of product listings on Etsy outperforms text-only models in popularity prediction.
+   We first define listing popularity through search clicks, favoriting and purchase activity. Next, we infer listing quality from the pixel-level information of listed images as quality features. We then compare our findings to text-only models for popularity prediction. Our initial results indicate that a combined image and text modeling of product listings on Etsy outperforms text-only models in popularity prediction.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -169,15 +167,15 @@ In this paper we use a set of image features that indicate quality
 
 \section{Introduction}
 The informative presentation of product listings through text and 
-images is the foundation of e-commerce websites. Shoppers often have a 
-specific style or visual preference for many of the available items such as jewelry, clothing, home decor and etc. 
+images is the foundation of modern e-commerce. Shoppers often have a 
+specific style or visual preference for many of the available items such as jewelry, clothing, home decor, etc. 
 Images provide the first order information for product listings. 
-Users usually use images in combination with textual description, price, ratings and \etc to decide if an item is a suitable match for what they need and have in mind. The selection of proper high quality images is then an important step in listing a successful product. In this paper we examine the role of image quality in a listing popularity on a major e-commerce website, Etsy~\footref{etsyurl}.
+Users usually use images in combination with other data modalities such as textual description, price, ratings and \etc to decide if an item is a suitable match for what they need and have in mind. The selection of proper high quality images is then an important step in listing a successful product. In this paper we examine the role of image quality in a listing popularity on a major e-commerce website, Etsy~\footref{etsyurl}.
 
 
 
 Etsy is an online marketplace for artisans selling unique handcrafted goods, and vintage wares that
-couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, nearly $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in an e-commerce setting. Each Etsy listing is composed of text information such as title, tags, item description, shop and seller name and complementary images. For a product listing to stand out, high-quality images describing the content of the product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. 
+couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in an e-commerce setting. Each Etsy listing is composed of text information such as title, tags, item description, shop and seller name and complementary images. For a product listing to stand out, high-quality images describing the content of the product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. 
 
 
 \begin{figure}
@@ -209,16 +207,15 @@ couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite
 \end{figure}
 
 
-In this paper we introduce a mechanism for extracting popularity of product listings from the images representing those listings. We then explore the correlation between listings' popularity and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into an alternative mechanism for interaction, the ``favorite.'' Favorites on Etsy are similar to any number of ``like'' mechanisms available online, the most familiar of which is Facebook's ubiquitous ``thumbs-up.'' By considering what users explicitly express interest in, we are able to form relationships between user preferences and popularity-based image features. 
+In this paper we introduce a mechanism for product listings popularity prediction from the images representing those listings. We then explore the correlation between listings' popularity and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into an alternative mechanism for interaction, the ``favorite.'' Favorites on Etsy are similar to any number of ``like'' mechanisms available online, the most familiar of which is Facebook's ubiquitous ``thumbs-up.'' By considering what users explicitly express interest in, we are able to form relationships between user preferences and popularity-based image features. 
  
 The remainder of the paper is organized as follows:
 Section~\ref{sec:background} discusses background on predicting image popularity.
 Section~\ref{sec:features} describes the features we used to predict populartiy.  We examine the
 performance of popularity features in predicting favorite listings classification in
-section~\ref{sec:classification} and explore the popularity entropy among active users in
-section~\ref{sec:entropy}. Finally, we conclude this paper in
+section~\ref{sec:classification}. Finally, we conclude this paper in
 section~\ref{sec:conclusion} and propose future research directions.
-%JOSH
+
 
 \section{Background}
 \label{sec:background}
@@ -239,6 +236,8 @@ algorithms.  In our work, we define popularity as listings that have been favori
 
 \section{Features}
 \label{sec:features}
+The quality features extracted from images are composed of a set of hand-crafted features. The implementation of this features is made publicly available~\footnote{We make our feature extraction pipeline for image quality features available at: \url{https://github.com/szakrewsky/quality-feature-extraction}}. 
+
   \subsection{Simplicity}
   High quality photos are typically simpler than others.  They often have one subject placed deliberately in the frame.  Sometimes the background is out of focus to emphasize the subject.  Poor quality photographs tend to have cluttered backgrounds and it may be difficult to distinguish the subject of the scene.  We used the four measures of simplicity from \cite{ke2006design}, spatial edge distribution, hue count, contrast and lightness, and blur.
 
@@ -346,11 +345,11 @@ algorithms.  In our work, we define popularity as listings that have been favori
   \subsection{Experimental}
   Maximally Stable Extremal Regions (MSER) \cite{matas2004robust} can be used to detect text because characters are typically single solid colors with sharp edges that standout from the background \cite{chen2011robust}.  Additionally, texture patterns are also often detected by MSER, like bricks on a wall.  We used the experimental feature the count of the number of MSER regions.  We would like to continue this experiment into other features based on text in images.
  
- \kamelia{fix from here on\\}
-\section{Popularity and Quality Features}
+\section{Popularity Prediction}
 \label{sec:experiments}
-In this section we present the unique dataset for quantitative evaluation of colors
-impact in user behaviour on Etsy. Once an item is listed on Etsy, the
+Once we have extracted all the quality features
+
+Once an item is listed on Etsy, the
 users can favorite a listing which allows them to bring all the items
 they like in one place. We first examine the listings dominant colors
 to predict if a listings is likely to be favorited or not. Then we
@@ -431,9 +430,8 @@ MIRA&$0.5232$&$0.5240$\\ \hline
  \hline
  \end{tabular}
    \end{center}
-\caption{Average classification accuracy rate and AUC are reported
-     for favorite listing classification using text and color
-     features.}
+\caption{Average classification accuracy rate lift are reported
+     using text features and multimodal feature vectors.}
   \label{tab:classification accuracy}
 \end{table}
 
@@ -455,33 +453,6 @@ improvement in favoriting behaviour prediction. It will be interesting
 to observe the effects of image quality, memorability, aesthetics and
 interestingness for the similar problem on this unique dataset.
 
-\subsection{Entropy Estimation on Selected Users}
-\label{sec:entropy}
-% \begin{figure}[h!]
-%         \centering
-%            \includegraphics[scale =0.2] {./figures/chart.jpg}
-         
-%         \caption{ Number of users in each entropy interval.}
-%      \label{fig:chart}
-% \end{figure}
-
-In this experiment we measure the entropy of dominant colors
-distribution among
-$11235$ active users with more
-than $20$ and less than $2000$ favorited listings within the past six
-months. These users have favorited $2.32$ million unique
-listings. The listings images are first tagged with top three dominant
-colors and the entropy of color distribution is estimated using the
-histogram approach. Figure~\ref{fig:chart} shows the number of users
-in each entropy interval. As we can observe in figure~\ref{fig:chart},
-most active users have high color distribution entropy in their
-favorited listings. There are however, some users with low color
-distribution entropy which highlights a strong tendency to favorite
-specific colors on Etsy. Figure~\ref{fig:aaa} shows a set of favorites
-for a user with the lowest color distribution entropy while
-figure~\ref{fig:bbb} illustrates selected favorited listings by
-highest color entropy user.
-
 \section{conclusion}
 \label{sec:conclusion}
 This works represents a initial study on understanding how images,
@@ -494,23 +465,6 @@ on Etsy, using object localization.
 
 We used this dominant colors to filter listings in a conventional text-based e-commerce search, according to user input. Moreover we explored the color distribution among candidate users favorited listings. We also examined the impact of color unigrams on users favoriting behaviour. This work represents the tip of the iceberg of understanding how visual cues influence user action in an e-commerce setting. 
 
- While color is no doubt important and an influencing factor while shopping, future work involves incorporating a deeper visual understanding of listing images. Image composition, texture and aesthetics all influence the emotional reaction that users have when seeing an item for the first time. Future work seeks to incorporate a richer understanding of images, using this improved representation to better model user preference, and provide a more effective e-commerce experience.
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
-% references section
-
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
 \bibliographystyle{IEEEtran}
 % argument is your BibTeX string definitions and bibliography database(s)
 \bibliography{ref}
