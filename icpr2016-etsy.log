@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/MacPorts 2015_7) (preloaded format=pdflatex 2015.10.22)  19 APR 2016 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/MacPorts 2015_7) (preloaded format=pdflatex 2015.10.22)  19 APR 2016 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -762,6 +762,12 @@ File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 )
 (./icpr2016-etsy.aux
 
+LaTeX Warning: Label `tab:dimensions' multiply defined.
+
+
+LaTeX Warning: Label `tab:dimensions' multiply defined.
+
+
 LaTeX Warning: Label `tab:results' multiply defined.
 
 )
@@ -1066,7 +1072,7 @@ Package amsmath Warning: Foreign command \over;
 (amsmath)                 on input line 221.
 
 
-<./figures/dress_il_fullxfull_927681771_b525.jpg, id=90, 404.51125pt x 606.265p
+<./figures/dress_il_fullxfull_927681771_b525.jpg, id=89, 404.51125pt x 606.265p
 t>
 File: ./figures/dress_il_fullxfull_927681771_b525.jpg Graphic file (type jpg)
  <use ./figures/dress_il_fullxfull_927681771_b525.jpg>
@@ -1074,14 +1080,14 @@ Package pdftex.def Info: ./figures/dress_il_fullxfull_927681771_b525.jpg used o
 n input line 229.
 (pdftex.def)             Requested size: 101.12756pt x 151.56587pt.
 
-<./figures/dress_sed.png, id=91, 705.63625pt x 703.62875pt>
+<./figures/dress_sed.png, id=90, 705.63625pt x 703.62875pt>
 File: ./figures/dress_sed.png Graphic file (type png)
 
 <use ./figures/dress_sed.png>
 Package pdftex.def Info: ./figures/dress_sed.png used on input line 229.
 (pdftex.def)             Requested size: 152.31178pt x 151.88191pt.
 
-<./figures/flowers_il_fullxfull_719383783_7d69.jpg, id=93, 537.00626pt x 410.53
+<./figures/flowers_il_fullxfull_719383783_7d69.jpg, id=92, 537.00626pt x 410.53
 375pt>
 File: ./figures/flowers_il_fullxfull_719383783_7d69.jpg Graphic file (type jpg)
 
@@ -1090,7 +1096,7 @@ Package pdftex.def Info: ./figures/flowers_il_fullxfull_719383783_7d69.jpg used
  on input line 234.
 (pdftex.def)             Requested size: 139.61833pt x 106.73625pt.
 
-<./figures/flowers_sed.png, id=94, 705.63625pt x 704.6325pt>
+<./figures/flowers_sed.png, id=93, 705.63625pt x 704.6325pt>
 File: ./figures/flowers_sed.png Graphic file (type png)
 
 <use ./figures/flowers_sed.png>
@@ -1124,92 +1130,96 @@ File: ./figures/frames_rot.png Graphic file (type png)
 <use ./figures/frames_rot.png>
 Package pdftex.def Info: ./figures/frames_rot.png used on input line 262.
 (pdftex.def)             Requested size: 90.5922pt x 90.45459pt.
+
+Underfull \vbox (badness 2173) has occurred while \output is active []
+
+
+Underfull \vbox (badness 2932) has occurred while \output is active []
+
  [3 <./figures/dress_il_fullxfull_927681771_b525.jpg> <./figures/dress_sed.png>
  <./figures/flowers_il_fullxfull_719383783_7d69.jpg> <./figures/flowers_sed.png
 >]
-<./figures/purse_il_fullxfull_528061813_4lgo.jpg, id=152, 512.314pt x 369.7815p
+<./figures/purse_il_fullxfull_528061813_4lgo.jpg, id=153, 512.314pt x 369.7815p
 t>
 File: ./figures/purse_il_fullxfull_528061813_4lgo.jpg Graphic file (type jpg)
  <use ./figures/purse_il_fullxfull_528061813_4lgo.jpg>
 Package pdftex.def Info: ./figures/purse_il_fullxfull_528061813_4lgo.jpg used o
-n input line 295.
+n input line 297.
 (pdftex.def)             Requested size: 135.89174pt x 98.0819pt.
 
-<./figures/purse_lbp.png, id=153, 975.645pt x 702.625pt>
+<./figures/purse_lbp.png, id=154, 975.645pt x 702.625pt>
 File: ./figures/purse_lbp.png Graphic file (type png)
 
 <use ./figures/purse_lbp.png>
-Package pdftex.def Info: ./figures/purse_lbp.png used on input line 298.
+Package pdftex.def Info: ./figures/purse_lbp.png used on input line 300.
 (pdftex.def)             Requested size: 135.89174pt x 97.86293pt.
 
-<./figures/purse_db10.png, id=154, 974.64125pt x 701.62125pt>
+<./figures/purse_db10.png, id=155, 974.64125pt x 701.62125pt>
 File: ./figures/purse_db10.png Graphic file (type png)
 
 <use ./figures/purse_db10.png>
-Package pdftex.def Info: ./figures/purse_db10.png used on input line 303.
+Package pdftex.def Info: ./figures/purse_db10.png used on input line 305.
 (pdftex.def)             Requested size: 135.89174pt x 97.81947pt.
 
-<./figures/purse_db11.png, id=155, 973.6375pt x 701.62125pt>
+<./figures/purse_db11.png, id=156, 973.6375pt x 701.62125pt>
 File: ./figures/purse_db11.png Graphic file (type png)
 
 <use ./figures/purse_db11.png>
-Package pdftex.def Info: ./figures/purse_db11.png used on input line 303.
+Package pdftex.def Info: ./figures/purse_db11.png used on input line 305.
 (pdftex.def)             Requested size: 135.89174pt x 97.92653pt.
 
-<./figures/purse_db12.png, id=156, 974.64125pt x 703.62875pt>
+<./figures/purse_db12.png, id=157, 974.64125pt x 703.62875pt>
 File: ./figures/purse_db12.png Graphic file (type png)
 
 <use ./figures/purse_db12.png>
-Package pdftex.def Info: ./figures/purse_db12.png used on input line 303.
+Package pdftex.def Info: ./figures/purse_db12.png used on input line 305.
 (pdftex.def)             Requested size: 135.89174pt x 98.09937pt.
 
-Overfull \hbox (13.96182pt too wide) detected at line 319
+Overfull \hbox (13.96182pt too wide) detected at line 321
 []\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = [] [] [] \OML/cmm/m/it/10 l\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 m; n\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 :
  []
 
+[4 <./figures/frames_il_fullxfull_732324506_py81.jpg> <./figures/frames_salienc
+y.png> <./figures/frames_rot.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./figures/frames_il_fullxfull_732324506_py81.jpg> <./figures/frames_salienc
-y.png> <./figures/frames_rot.png>]
-<./figures/spoons_il_fullxfull_661851396_jppy.jpg, id=189, 1505.625pt x 1001.74
+
+<./figures/spoons_il_fullxfull_661851396_jppy.jpg, id=192, 1505.625pt x 1001.74
 25pt>
 File: ./figures/spoons_il_fullxfull_661851396_jppy.jpg Graphic file (type jpg)
  <use ./figures/spoons_il_fullxfull_661851396_jppy.jpg>
 Package pdftex.def Info: ./figures/spoons_il_fullxfull_661851396_jppy.jpg used 
-on input line 399.
+on input line 394.
 (pdftex.def)             Requested size: 135.89174pt x 90.41278pt.
 
-<./figures/spoons_laplacian_low_dof.png, id=190, 322.20375pt x 211.79124pt>
+<./figures/spoons_laplacian_low_dof.png, id=193, 322.20375pt x 211.79124pt>
 File: ./figures/spoons_laplacian_low_dof.png Graphic file (type png)
 
 <use ./figures/spoons_laplacian_low_dof.png>
 Package pdftex.def Info: ./figures/spoons_laplacian_low_dof.png used on input l
-ine 402.
+ine 397.
 (pdftex.def)             Requested size: 137.70262pt x 90.51907pt.
 
-<./figures/spoons_laplacian_low_dof_swd.png, id=191, 321.2pt x 213.79875pt>
+<./figures/spoons_laplacian_low_dof_swd.png, id=194, 321.2pt x 213.79875pt>
 File: ./figures/spoons_laplacian_low_dof_swd.png Graphic file (type png)
 
 <use ./figures/spoons_laplacian_low_dof_swd.png>
 Package pdftex.def Info: ./figures/spoons_laplacian_low_dof_swd.png used on inp
-ut line 405.
+ut line 400.
 (pdftex.def)             Requested size: 135.89174pt x 90.45384pt.
- (./icpr2016-etsy.bbl
+ [5 <./figures/purse_il_fullxfull_528061813_4lgo.jpg> <./figures/purse_lbp.png>
+ <./figures/purse_db10.png> <./figures/purse_db11.png> <./figures/purse_db12.pn
+g>] (./icpr2016-etsy.bbl
 (./icpr2016-etsy.brf)
 \tf@brf=\write3
 \openout3 = `icpr2016-etsy.brf'.
 
- [5 <./figures/purse_il_fullxfull_528061813_4lgo.jpg> <./figures/purse_lbp.png>
- <./figures/purse_db10.png> <./figures/purse_db11.png> <./figures/purse_db12.pn
-g>]
+
 Underfull \hbox (badness 7722) in paragraph at lines 94--94
 []\T1/ptm/m/n/8 C. Lynch, K. Arya-far, and J. At-ten-berg, ``Im-ages
  []
-
-
-Underfull \vbox (badness 1077) has occurred while \output is active []
 
 )
 
@@ -1223,30 +1233,30 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
 [6 <./figures/spoons_il_fullxfull_661851396_jppy.jpg> <./figures/spoons_laplaci
 an_low_dof.png> <./figures/spoons_laplacian_low_dof_swd.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
 
 (./icpr2016-etsy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
 Package rerunfilecheck Info: File `icpr2016-etsy.brf' has not changed.
-(rerunfilecheck)             Checksum: 73BAD8430CBB24A6CB8338063B2643D5;2984.
+(rerunfilecheck)             Checksum: 94748133D2057B1A18FB39019AA36561;2984.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 428.
  ) 
 Here is how much of TeX's memory you used:
- 10713 strings out of 494185
- 161746 string characters out of 6156887
- 263779 words of memory out of 5000000
- 13736 multiletter control sequences out of 15000+600000
+ 10714 strings out of 494185
+ 161762 string characters out of 6156887
+ 260931 words of memory out of 5000000
+ 13737 multiletter control sequences out of 15000+600000
  117082 words of font info for 136 fonts, out of 8000000 for 9000
  433 hyphenation exceptions out of 8191
- 36i,11n,38p,1282b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,38p,1282b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</opt/local/share
 /texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx7.pfb></opt/local/share/texmf
 -texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/local/share/texmf-texl
@@ -1261,10 +1271,10 @@ fb></opt/local/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></opt/local
 /share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></opt/local/share/texmf-
 texlive/fonts/type1/urw/times/utmr8a.pfb></opt/local/share/texmf-texlive/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on icpr2016-etsy.pdf (6 pages, 3335185 bytes).
+Output written on icpr2016-etsy.pdf (6 pages, 3337057 bytes).
 PDF statistics:
- 310 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
+ 309 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
  68 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
