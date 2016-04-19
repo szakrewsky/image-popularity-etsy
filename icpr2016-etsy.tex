@@ -106,7 +106,7 @@ right  = 1in]{geometry}
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
 %some lame title for now
-\title{Item Popularity Prediction in E-commerce Using Image Quality Featutre Vectors}
+\title{Item Popularity Prediction in E-commerce Using Image Quality Feature Vectors}
 
 
 % author names and affiliations
@@ -135,7 +135,7 @@ Ali Shokoufandeh\\
 %\boldmath
 Online retail is a visual experience- Shoppers often use images as the first
  order information to decide if an item matches their personal style. 
- Image characteristics such as color, scene composition, texture, style, 
+ Image characteristics such as color, simplicity, scene composition, texture, style, 
  aesthetics and overall quality play a crucial role in
   making a purchase decision, clicking on or liking a product listing. In this paper we use a set of image features that indicate quality
    to predict product listings popularity on a major e-commerce website, Etsy~\footlabel{etsyurl}{\url{www.etsy.com}}.
@@ -162,7 +162,7 @@ Users often use images in combination with other data modalities such as textual
 
 
 Etsy is an online marketplace for artisans selling unique handcrafted goods, and vintage wares that
-couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in e-commerce settings. Each Etsy listing is composed of text information such as title, tags, item description, shop and seller name and complementary images. For a product listing to stand out, high-quality images describing the content of the product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. Figure~\ref{fig:etsylistings} illustrates some Etsy images with different scene composition, lighting and image quality. 
+couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some interesting questions about the role of images as a rich visual experience in e-commerce settings. Each Etsy listing is composed of text information such as title, tags, item description, shop and seller name and complementary images. For a product listing to stand out, high-quality images describing the content of the product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. Figure~\ref{fig:etsylistings} illustrates some Etsy images with different scene composition, lighting and image quality as featured on the website.
 
 
 \begin{figure}
@@ -193,16 +193,16 @@ couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite
   \label{fig:etsylistings}
 \end{figure}
 
+Early work in the literature has defined image popularity as quality~\cite{ke2006design} or aesthetics~\cite{datta2006studying} and use data from photography rating websites where users who have interest in photography upload their photos and rate others. Popularity has also been defined as memorability~\cite{isola2011makes}, and interestingness~\cite{dhar2011high,gygli2013interestingness}.  More recent work has directly tackled popularity.  In \cite{khosla2014makes}, popularity is defined as the number of views on Flickr, and \cite{aryafar2014exploring} uses favorited listings on Etsy.
 
-In this paper we introduce a mechanism for product listings popularity prediction from the images representing those listings. We then explore the correlation between image quality and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into a combination of mechanisms for interaction, including the number of favorites, purchases and clicks on items to define item popularity. Favorites indicate an interest in an item and are similar to liking mechanism on other websites such as thumbs-up on facebook.
+Popularity tends to be predicted using typical classifiers such as SVMs or regression \cite{datta2006studying} \cite{khosla2014makes} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Datta et. al. \cite{datta2006studying} uses a two class SVM classifier with a forward selection algorithm to find suitable feature vectors indicating popularity.  By using elastic net to rank feature relevance to aesthetics, and a best first algorithm to find feature sets that minimize the RMSE cross validation error, \cite{wang2015automatic} are able to achieve a 30.1\% improvement compared to \cite{chen2014aesthetic}.  A few have explored other machine learning techniques.  In \cite{ke2006design} a naive Bayes classifier is used and Aryafar et. al \cite{aryafar2014exploring} studied the significance of color in favorited listings on Etsy using logistic regression, perceptron, passive aggressive and margin infused relaxed algorithms.
 
-Early work in the literature has defined popularity as quality~\cite{ke2006design} or aesthetics~\cite{datta2006studying} and use data from photography rating websites where users who have interest in photography upload their photos and rate others.  Popularity has also been defined as memorability~\cite{isola2011makes}, and interestingness~\cite{dhar2011high,gygli2013interestingness}.  More recent work has directly tackled popularity.  In \cite{khosla2014makes}, popularity is defined as the number of views on Flickr, and \cite{aryafar2014exploring} uses favorited listings on Etsy.
+In this paper we introduce a mechanism for product listings popularity prediction from the images representing those listings. We then explore the correlation between image quality and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into a combination of mechanisms for interaction, including the number of favorites, purchases and clicks on items to define item popularity. Favorites indicate an interest in an item and are similar to liking mechanism on other websites such as thumbs-up on Facebook.
 
-Popularity tends to be predicted using SVM classification or regression \cite{datta2006studying} \cite{khosla2014makes} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Datta et. al. \cite{datta2006studying} uses a two class SVM classifier with a forward selection algorithm to find good feature sets.  By using elastic net to rank feature relevance to aesthetics, and a best first algorithm to find feature sets that minimize the RMSE cross validation error, \cite{wang2015automatic} are able to achieve a 30.1\% improvement compared to \cite{chen2014aesthetic}.  A few have explored other machine learning techniques.  In \cite{ke2006design} a naive Bayes classifier is used, not SVM.  Aryafar et. al \cite{aryafar2014exploring} studied the significance of color in favorited listings on Etsy using logistic regression, perceptron, passive aggressive and margin infused relaxed algorithms.
 
-The features used in popularity prediction model the same qualities professional photographers use such as light, color, rule of thirds, texture, smoothness, blurriness, depth of field, scene composition \cite{ke2006design} \cite{datta2006studying} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Most of these features are unsupervised, but some such as the spacial edge distribution and color distribution features of \cite{ke2006design} require all of the labeled training data.  Some recent work has looked at semantic object features.  \cite{khosla2014makes} used the popular CNN ImageNet to detect the presence of 1000 difference object categories in the image.  The presence/absence of these categories is used as the feature.
+The features used in popularity prediction model the same qualities professional photographers use such as light, color, rule of thirds, texture, smoothness, blurriness, depth of field, scene composition \cite{ke2006design} \cite{datta2006studying} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Most of these features are unsupervised, but some such as the spatial edge distribution and color distribution features of \cite{ke2006design} require all of the labeled training data.  Some recent work has looked at semantic object features.  \cite{khosla2014makes} used the popular CNN ImageNet to detect the presence of 1000 difference object categories in the image.  The presence/absence of these categories is used as the feature. In this paper we propose a combination of simplicity, blur, depth of field, rule of thirds and texture features as the image quality representation. We also combine the image representation with text features as a multimodal embedding of items for sale. State-of-the-art studies have often shown that multimodal embeddings of items can outperform single modality representations for multiple prediction, ranking and classification problems~\cite{lynch2015images} \cite{yu2014click} \cite{yu2015learning}.
 
- 
+
 The remainder of the paper is organized as follows:
 Section~\ref{sec:features} describes the image quality feature vectors.  We examine the
 performance of image quality features in predicting listing popularity in
@@ -233,7 +233,7 @@ The quality features extracted from images are composed of a set of hand-crafted
     \includegraphics[scale=0.152]{./figures/flowers_sed.png}
   }
   \caption{
-  The Laplacian image for computing spacial edge distribution for two images.  The feature for figure a. is 0.013 and for b. is 0.30.
+  The Laplacian image for computing spatial edge distribution for two images.  The feature for figure a. is 0.013 and for b. is 0.30.
   }
   \label{fig:sed}
 \end{figure*}
@@ -270,7 +270,7 @@ The quality features extracted from images are composed of a set of hand-crafted
   \begin{equation}
     w_i = {\sum_{p \in W_i} w_p \over A(W_i)} .
   \end{equation}
-  To compute the feature, the image is divided into a 5x5 grid with emphasis on the thirds lines; the horizontal and vertical regions centered on the thirds lines are 1/6 of the image size.  Figure \ref{fig:rot} shows the saliecy detection with the 5x5 grid overlay, and the thirds map feature for an image.
+  To compute the feature, the image is divided into a 5x5 grid with emphasis on the thirds lines; the horizontal and vertical regions centered on the thirds lines are 1/6 of the image size.  Figure \ref{fig:rot} shows the saliency detection with the 5x5 grid overlay, and the thirds map feature for an image.
 
 
 
@@ -309,11 +309,11 @@ The quality features extracted from images are composed of a set of hand-crafted
 
 
   \subsection{Depth of Field}
-  Depth of field is the distance between between the nearest and farthest objects that appear in sharp focus.  A technique of professional photographers is to use low depth of field to focus on the photographic subject while blurring the background.  We used the feature \cite{datta2006studying} of the ratio of high frequency detail in center regions of the image compared to the entire image.  Let $w$ be the bottom level of a wavelet transform, the feature is
+  Depth of field is the distance between the nearest and farthest objects that appear in sharp focus.  A technique of professional photographers is to use low depth of field to focus on the photographic subject while blurring the background.  We used the feature \cite{datta2006studying} of the ratio of high frequency detail in center regions of the image compared to the entire image.  Let $w$ be the bottom level of a wavelet transform, the feature is
   \begin{equation}
     f ={\sum_{(x,y)}\in M_6\cup M_7\cup M_{10}\cup M_{11} w(x,y) \over \sum_{i=1}^{16}\sum_{(x,y)\in M_i} w(x,y)} ,
   \end{equation}
-  where $M_i | 1 \le i \le 16$ are the cells of a 4x4 grid.  The same feature is also reapplied using the Laplacian pyramid $l$ instead of $w$ \cite{wang2015automatic}.  These features only look at the center region of the image.  A third feature \cite{wang2015automatic} looks at the spacial distribution of high frequency details.  Let $l$ be the bottom layer of a Laplacian pyramid and $c_{row}, c_{col}$ are the center of mass, the feature is
+  where $M_i | 1 \le i \le 16$ are the cells of a 4x4 grid.  The same feature is also reapplied using the Laplacian pyramid $l$ instead of $w$ \cite{wang2015automatic}.  These features only look at the center region of the image.  A third feature \cite{wang2015automatic} looks at the spatial distribution of high frequency details.  Let $l$ be the bottom layer of a Laplacian pyramid and $c_{row}, c_{col}$ are the center of mass, the feature is
   \begin{equation} 
     f = {1 \over MN} \sum_{m=1}^M\sum_{n=1}^N l(m,n)\sqrt{(m-c_{row})^2 + (n-c_{col})^2} .
   \end{equation}
@@ -325,25 +325,8 @@ The quality features extracted from images are composed of a set of hand-crafted
 \section{Popularity Prediction}
 \label{sec:experiments}
 We collect a set of images from Etsy through Etsy's API\footnote{\url{www.etsy.com/developers}} for quality prediction.
-Our dataset consists of $50,000$ Etsy listing images. Each Etsy listing has at least one photo and can have up to five photos to show different angles and details. In our expeiments we only extract the first (main) listing image which shows up in search results and is featured as the main image on the listing page. We denote the number of favorites for each listing, $L$ with main image $I$ as $F(L_I)$, the number of purchases with $P(L_I)$ and number of clicks with $C(L_I)$. We associate each listing image with it's popularity score as :
+Our dataset consists of $50,000$ Etsy listing images. Each Etsy listing has at least one photo and can have up to five photos to show different angles and details. In our experiments we only extract the first (main) listing image which shows up in search results and is featured as the main image on the listing page. We denote the number of favorites for each listing, $L$ with main image $I$ as $F(L_I)$, the number of purchases with $P(L_I)$ and number of clicks with $C(L_I)$. We associate each listing image with it's popularity score as :
 $$Popularity(L_I) = \sum F(L_I) + C(L_I) + P(L_I).$$
-
-\begin{figure*}
-  \centering
-  \subfigure[]{
-    \includegraphics[width=0.3\textwidth]{./figures/spoons_il_fullxfull_661851396_jppy.jpg}
-  }
-  \subfigure[]{
-    \includegraphics[width=0.304\textwidth]{./figures/spoons_laplacian_low_dof.png}
-  }
-  \subfigure[]{
-    \includegraphics[width=0.3\textwidth]{./figures/spoons_laplacian_low_dof_swd.png}
-  }
-  \caption{
-  Figure b. shows the Low Depth of Field features in the center grid region for the Laplacian image.  Figure c. shows the same image with its center of mass.
-  }
-  \label{fig:lowdof}
-\end{figure*}
 
 
 \begin{table}
@@ -408,6 +391,25 @@ understanding and a better overall shopping experience. To facilitate
 this understanding, this work proposed an empirical method to
 estimate the image quality features representing product listings
 on Etsy. These feature vectors were combined with traditional textual features to serve as the multimodal item representation. We compared the efficiency of single modality (text-only and image-only) features to multimodal feature vectors in popularity prediction. Our initial results indicate that quality features in combination with text information can increase the prediction accuracy for a sample dataset.
+
+\begin{figure*}[t!]
+  \centering
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/spoons_il_fullxfull_661851396_jppy.jpg}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.304\textwidth]{./figures/spoons_laplacian_low_dof.png}
+  }
+  \subfigure[]{
+    \includegraphics[width=0.3\textwidth]{./figures/spoons_laplacian_low_dof_swd.png}
+  }
+  \caption{
+  Figure b. shows the Low Depth of Field features in the center grid region for the Laplacian image.  Figure c. shows the same image with its center of mass.
+  }
+  \label{fig:lowdof}
+\end{figure*}
+
+
 
 \bibliographystyle{IEEEtran}
 % argument is your BibTeX string definitions and bibliography database(s)

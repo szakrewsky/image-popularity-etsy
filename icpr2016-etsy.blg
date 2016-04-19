@@ -14,45 +14,45 @@ Database file #1: ref.bib
 Warning--empty journal in gygli2013interestingness
 
 Done.
-You've used 18 entries,
+You've used 21 entries,
             4024 wiz_defined-function locations,
-            909 strings with 10617 characters,
-and the built_in function-call counts, 16175 in all, are:
-= -- 1236
-> -- 389
-< -- 155
-+ -- 224
-- -- 66
-* -- 781
-:= -- 2225
-add.period$ -- 50
-call.type$ -- 18
-change.case$ -- 17
-chr.to.int$ -- 396
-cite$ -- 19
-duplicate$ -- 1107
-empty$ -- 1404
-format.name$ -- 77
-if$ -- 3803
+            925 strings with 11173 characters,
+and the built_in function-call counts, 18592 in all, are:
+= -- 1441
+> -- 450
+< -- 179
++ -- 258
+- -- 76
+* -- 900
+:= -- 2586
+add.period$ -- 56
+call.type$ -- 21
+change.case$ -- 20
+chr.to.int$ -- 450
+cite$ -- 22
+duplicate$ -- 1279
+empty$ -- 1578
+format.name$ -- 90
+if$ -- 4358
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 182
-newline$ -- 77
-num.names$ -- 18
-pop$ -- 459
+int.to.str$ -- 21
+missing$ -- 210
+newline$ -- 86
+num.names$ -- 21
+pop$ -- 518
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1232
+skip$ -- 1419
 stack$ -- 0
-substring$ -- 957
-swap$ -- 926
-text.length$ -- 23
+substring$ -- 1086
+swap$ -- 1075
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 18
+type$ -- 21
 warning$ -- 1
-while$ -- 82
-width$ -- 20
-write$ -- 187
+while$ -- 93
+width$ -- 23
+write$ -- 217
 (There was 1 warning)

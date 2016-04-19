@@ -87,6 +87,21 @@ J.~Wang and J.~Allebach, ``Automatic assessment of online fashion shopping
   International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
   2015, pp. 2915--2919.
 
+\bibitem{lynch2015images}
+C.~Lynch, K.~Aryafar, and J.~Attenberg, ``Images don't lie: Transferring deep
+  visual semantic features to large-scale multimodal learning to rank,''
+  \emph{arXiv preprint arXiv:1511.06746}, 2015.
+
+\bibitem{yu2014click}
+J.~Yu, Y.~Rui, and D.~Tao, ``Click prediction for web image reranking using
+  multimodal sparse coding,'' \emph{Image Processing, IEEE Transactions on},
+  vol.~23, no.~5, pp. 2019--2032, 2014.
+
+\bibitem{yu2015learning}
+J.~Yu, D.~Tao, M.~Wang, and Y.~Rui, ``Learning to rank using user clicks and
+  visual features for image retrieval,'' \emph{Cybernetics, IEEE Transactions
+  on}, vol.~45, no.~4, pp. 767--779, 2015.
+
 \bibitem{tong2004blur}
 H.~Tong, M.~Li, H.~Zhang, and C.~Zhang, ``Blur detection for digital images
   using wavelet transform,'' in \emph{Multimedia and Expo, 2004. ICME'04. 2004
