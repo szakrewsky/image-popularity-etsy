@@ -142,7 +142,6 @@ Online retail is a visual experience- Shoppers often use images as the first
 In this paper we use a set of image features that indicate quality
    to predict product listings popularity on a major e-commerce website, Etsy~\footlabel{etsyurl}{\url{www.etsy.com}}.
    We first define listing popularity on Etsy through search clicks, favoriting and purchase activity. Next, we infer listing quality from the pixel-level information of listed images on Etsy as quality features. We then compare our findings to text-only models for popularity prediction. Our initial results indicate that a combined image and text modeling of product listings on Etsy outperforms text-only models in popularity prediction.
-
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -180,6 +179,34 @@ Users usually use images in combination with textual description, price, ratings
 Etsy is an online marketplace for artisans selling unique handcrafted goods, and vintage wares that
 couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, nearly $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in an e-commerce setting. Each Etsy listing is composed of text information such as title, tags, item description, shop and seller name and complementary images. For a product listing to stand out, high-quality images describing the content of the product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. 
 
+
+\begin{figure}
+  \centering
+    \includegraphics[scale=0.15]{./figures/sample1.jpg}
+    \includegraphics[scale=0.15]{./figures/sample2.jpg}
+     \includegraphics[scale=0.15]{./figures/sample3.jpg}
+    \includegraphics[scale=0.15]{./figures/sample4.jpg}
+    \includegraphics[scale=0.15]{./figures/sample17.jpg}
+    \includegraphics[scale=0.15]{./figures/sample18.jpg}
+     \includegraphics[scale=0.15]{./figures/sample19.jpg}
+    \includegraphics[scale=0.15]{./figures/sample20.jpg}
+     \includegraphics[scale=0.15]{./figures/sample5.jpg}
+    \includegraphics[scale=0.15]{./figures/sample6.jpg}
+     \includegraphics[scale=0.15]{./figures/sample7.jpg}
+    \includegraphics[scale=0.15]{./figures/sample8.jpg}
+     \includegraphics[scale=0.15]{./figures/sample9.jpg}
+     \includegraphics[scale=0.15]{./figures/sample10.jpg}
+    \includegraphics[scale=0.15]{./figures/sample11.jpg}
+     \includegraphics[scale=0.15]{./figures/sample12.jpg}
+       \includegraphics[scale=0.15]{./figures/sample13.jpg}
+     \includegraphics[scale=0.15]{./figures/sample14.jpg}
+    \includegraphics[scale=0.15]{./figures/sample15.jpg}
+     \includegraphics[scale=0.15]{./figures/sample16.jpg}
+  \caption{
+  Sample Etsy listing images are shown with different lighting, scene composition, and quality.
+  }
+  \label{fig:etsylistings}
+\end{figure}
 
 
 In this paper we introduce a mechanism for extracting popularity of product listings from the images representing those listings. We then explore the correlation between listings' popularity and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into an alternative mechanism for interaction, the ``favorite.'' Favorites on Etsy are similar to any number of ``like'' mechanisms available online, the most familiar of which is Facebook's ubiquitous ``thumbs-up.'' By considering what users explicitly express interest in, we are able to form relationships between user preferences and popularity-based image features. 
