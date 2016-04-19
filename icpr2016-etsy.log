@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/MacPorts 2015_7) (preloaded format=pdflatex 2015.10.22)  19 APR 2016 14:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/MacPorts 2015_7) (preloaded format=pdflatex 2015.10.22)  19 APR 2016 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -762,7 +762,7 @@ File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 )
 (./icpr2016-etsy.aux
 
-LaTeX Warning: Label `tab:classification accuracy' multiply defined.
+LaTeX Warning: Label `tab:results' multiply defined.
 
 )
 \openout1 = `icpr2016-etsy.aux'.
@@ -911,144 +911,144 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 141.
 (/opt/local/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<./figures/sample1.jpg, id=11, 301.125pt x 301.125pt>
+<./figures/sample1.jpg, id=12, 301.125pt x 301.125pt>
 File: ./figures/sample1.jpg Graphic file (type jpg)
 
 <use ./figures/sample1.jpg>
-Package pdftex.def Info: ./figures/sample1.jpg used on input line 183.
+Package pdftex.def Info: ./figures/sample1.jpg used on input line 170.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample2.jpg, id=12, 301.125pt x 301.125pt>
+<./figures/sample2.jpg, id=13, 301.125pt x 301.125pt>
 File: ./figures/sample2.jpg Graphic file (type jpg)
 
 <use ./figures/sample2.jpg>
-Package pdftex.def Info: ./figures/sample2.jpg used on input line 184.
+Package pdftex.def Info: ./figures/sample2.jpg used on input line 171.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample3.jpg, id=13, 301.125pt x 301.125pt>
+<./figures/sample3.jpg, id=14, 301.125pt x 301.125pt>
 File: ./figures/sample3.jpg Graphic file (type jpg)
 
 <use ./figures/sample3.jpg>
-Package pdftex.def Info: ./figures/sample3.jpg used on input line 185.
+Package pdftex.def Info: ./figures/sample3.jpg used on input line 172.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample4.jpg, id=14, 301.125pt x 301.125pt>
+<./figures/sample4.jpg, id=15, 301.125pt x 301.125pt>
 File: ./figures/sample4.jpg Graphic file (type jpg)
 
 <use ./figures/sample4.jpg>
-Package pdftex.def Info: ./figures/sample4.jpg used on input line 186.
+Package pdftex.def Info: ./figures/sample4.jpg used on input line 173.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample17.jpg, id=15, 301.125pt x 301.125pt>
+<./figures/sample17.jpg, id=16, 301.125pt x 301.125pt>
 File: ./figures/sample17.jpg Graphic file (type jpg)
 
 <use ./figures/sample17.jpg>
-Package pdftex.def Info: ./figures/sample17.jpg used on input line 187.
+Package pdftex.def Info: ./figures/sample17.jpg used on input line 174.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample18.jpg, id=16, 301.125pt x 301.125pt>
+<./figures/sample18.jpg, id=17, 301.125pt x 301.125pt>
 File: ./figures/sample18.jpg Graphic file (type jpg)
 
 <use ./figures/sample18.jpg>
-Package pdftex.def Info: ./figures/sample18.jpg used on input line 188.
+Package pdftex.def Info: ./figures/sample18.jpg used on input line 175.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample19.jpg, id=17, 301.125pt x 301.125pt>
+<./figures/sample19.jpg, id=18, 301.125pt x 301.125pt>
 File: ./figures/sample19.jpg Graphic file (type jpg)
 
 <use ./figures/sample19.jpg>
-Package pdftex.def Info: ./figures/sample19.jpg used on input line 189.
+Package pdftex.def Info: ./figures/sample19.jpg used on input line 176.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample20.jpg, id=18, 301.125pt x 301.125pt>
+<./figures/sample20.jpg, id=19, 301.125pt x 301.125pt>
 File: ./figures/sample20.jpg Graphic file (type jpg)
 
 <use ./figures/sample20.jpg>
-Package pdftex.def Info: ./figures/sample20.jpg used on input line 190.
+Package pdftex.def Info: ./figures/sample20.jpg used on input line 177.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample5.jpg, id=19, 301.125pt x 301.125pt>
+<./figures/sample5.jpg, id=20, 301.125pt x 301.125pt>
 File: ./figures/sample5.jpg Graphic file (type jpg)
 
 <use ./figures/sample5.jpg>
-Package pdftex.def Info: ./figures/sample5.jpg used on input line 191.
+Package pdftex.def Info: ./figures/sample5.jpg used on input line 178.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample6.jpg, id=20, 301.125pt x 301.125pt>
+<./figures/sample6.jpg, id=21, 301.125pt x 301.125pt>
 File: ./figures/sample6.jpg Graphic file (type jpg)
 
 <use ./figures/sample6.jpg>
-Package pdftex.def Info: ./figures/sample6.jpg used on input line 192.
+Package pdftex.def Info: ./figures/sample6.jpg used on input line 179.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample7.jpg, id=21, 301.125pt x 301.125pt>
+<./figures/sample7.jpg, id=22, 301.125pt x 301.125pt>
 File: ./figures/sample7.jpg Graphic file (type jpg)
 
 <use ./figures/sample7.jpg>
-Package pdftex.def Info: ./figures/sample7.jpg used on input line 193.
+Package pdftex.def Info: ./figures/sample7.jpg used on input line 180.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample8.jpg, id=22, 301.125pt x 301.125pt>
+<./figures/sample8.jpg, id=23, 301.125pt x 301.125pt>
 File: ./figures/sample8.jpg Graphic file (type jpg)
 
 <use ./figures/sample8.jpg>
-Package pdftex.def Info: ./figures/sample8.jpg used on input line 194.
+Package pdftex.def Info: ./figures/sample8.jpg used on input line 181.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample9.jpg, id=23, 301.125pt x 301.125pt>
+<./figures/sample9.jpg, id=24, 301.125pt x 301.125pt>
 File: ./figures/sample9.jpg Graphic file (type jpg)
 
 <use ./figures/sample9.jpg>
-Package pdftex.def Info: ./figures/sample9.jpg used on input line 195.
+Package pdftex.def Info: ./figures/sample9.jpg used on input line 182.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample10.jpg, id=24, 301.125pt x 301.125pt>
+<./figures/sample10.jpg, id=25, 301.125pt x 301.125pt>
 File: ./figures/sample10.jpg Graphic file (type jpg)
 
 <use ./figures/sample10.jpg>
-Package pdftex.def Info: ./figures/sample10.jpg used on input line 196.
+Package pdftex.def Info: ./figures/sample10.jpg used on input line 183.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample11.jpg, id=25, 301.125pt x 301.125pt>
+<./figures/sample11.jpg, id=26, 301.125pt x 301.125pt>
 File: ./figures/sample11.jpg Graphic file (type jpg)
 
 <use ./figures/sample11.jpg>
-Package pdftex.def Info: ./figures/sample11.jpg used on input line 197.
+Package pdftex.def Info: ./figures/sample11.jpg used on input line 184.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample12.jpg, id=26, 301.125pt x 301.125pt>
+<./figures/sample12.jpg, id=27, 301.125pt x 301.125pt>
 File: ./figures/sample12.jpg Graphic file (type jpg)
 
 <use ./figures/sample12.jpg>
-Package pdftex.def Info: ./figures/sample12.jpg used on input line 198.
+Package pdftex.def Info: ./figures/sample12.jpg used on input line 185.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample13.jpg, id=27, 301.125pt x 301.125pt>
+<./figures/sample13.jpg, id=28, 301.125pt x 301.125pt>
 File: ./figures/sample13.jpg Graphic file (type jpg)
 
 <use ./figures/sample13.jpg>
-Package pdftex.def Info: ./figures/sample13.jpg used on input line 199.
+Package pdftex.def Info: ./figures/sample13.jpg used on input line 186.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample14.jpg, id=28, 301.125pt x 301.125pt>
+<./figures/sample14.jpg, id=29, 301.125pt x 301.125pt>
 File: ./figures/sample14.jpg Graphic file (type jpg)
 
 <use ./figures/sample14.jpg>
-Package pdftex.def Info: ./figures/sample14.jpg used on input line 200.
+Package pdftex.def Info: ./figures/sample14.jpg used on input line 187.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample15.jpg, id=29, 301.125pt x 301.125pt>
+<./figures/sample15.jpg, id=30, 301.125pt x 301.125pt>
 File: ./figures/sample15.jpg Graphic file (type jpg)
 
 <use ./figures/sample15.jpg>
-Package pdftex.def Info: ./figures/sample15.jpg used on input line 201.
+Package pdftex.def Info: ./figures/sample15.jpg used on input line 188.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
 
-<./figures/sample16.jpg, id=30, 301.125pt x 301.125pt>
+<./figures/sample16.jpg, id=31, 301.125pt x 301.125pt>
 File: ./figures/sample16.jpg Graphic file (type jpg)
 
 <use ./figures/sample16.jpg>
-Package pdftex.def Info: ./figures/sample16.jpg used on input line 202.
+Package pdftex.def Info: ./figures/sample16.jpg used on input line 189.
 (pdftex.def)             Requested size: 45.1668pt x 45.1668pt.
  [1{/opt/local/var/db/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1060,20 +1060,10 @@ e6.jpg> <./figures/sample7.jpg> <./figures/sample8.jpg> <./figures/sample9.jpg>
  <./figures/sample10.jpg> <./figures/sample11.jpg> <./figures/sample12.jpg> <./
 figures/sample13.jpg> <./figures/sample14.jpg> <./figures/sample15.jpg> <./figu
 res/sample16.jpg>]
-Underfull \hbox (badness 5924) in paragraph at lines 239--239
-[][][]\T1/ptm/m/n/8 We make our fea-ture ex-trac-tion pipeline for im-age
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--239
-\T1/ptm/m/n/8 qual-ity fea-tures avail-able at: [][]$https : / / github . com /
- szakrewsky /
- []
-
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 245.
+(amsmath)                 on input line 221.
 
 
 <./figures/dress_il_fullxfull_927681771_b525.jpg, id=81, 404.51125pt x 606.265p
@@ -1081,14 +1071,14 @@ t>
 File: ./figures/dress_il_fullxfull_927681771_b525.jpg Graphic file (type jpg)
  <use ./figures/dress_il_fullxfull_927681771_b525.jpg>
 Package pdftex.def Info: ./figures/dress_il_fullxfull_927681771_b525.jpg used o
-n input line 253.
+n input line 229.
 (pdftex.def)             Requested size: 101.12756pt x 151.56587pt.
 
 <./figures/dress_sed.png, id=82, 705.63625pt x 703.62875pt>
 File: ./figures/dress_sed.png Graphic file (type png)
 
 <use ./figures/dress_sed.png>
-Package pdftex.def Info: ./figures/dress_sed.png used on input line 253.
+Package pdftex.def Info: ./figures/dress_sed.png used on input line 229.
 (pdftex.def)             Requested size: 152.31178pt x 151.88191pt.
 
 <./figures/flowers_il_fullxfull_719383783_7d69.jpg, id=84, 537.00626pt x 410.53
@@ -1097,83 +1087,83 @@ File: ./figures/flowers_il_fullxfull_719383783_7d69.jpg Graphic file (type jpg)
 
  <use ./figures/flowers_il_fullxfull_719383783_7d69.jpg>
 Package pdftex.def Info: ./figures/flowers_il_fullxfull_719383783_7d69.jpg used
- on input line 258.
+ on input line 234.
 (pdftex.def)             Requested size: 139.61833pt x 106.73625pt.
 
 <./figures/flowers_sed.png, id=85, 705.63625pt x 704.6325pt>
 File: ./figures/flowers_sed.png Graphic file (type png)
 
 <use ./figures/flowers_sed.png>
-Package pdftex.def Info: ./figures/flowers_sed.png used on input line 258.
+Package pdftex.def Info: ./figures/flowers_sed.png used on input line 234.
 (pdftex.def)             Requested size: 107.25136pt x 107.0988pt.
 
-Underfull \hbox (badness 1642) in paragraph at lines 266--267
+Underfull \hbox (badness 1642) in paragraph at lines 243--244
  []\T1/ptm/m/it/10 Hue Count: [][] \T1/ptm/m/n/10 Pro-fes-sional pho-tographs l
 ook
  []
 
-[2]
-<./figures/frames_il_fullxfull_732324506_py81.jpg, id=122, 361.35pt x 239.9364p
-t>
+
+<./figures/frames_il_fullxfull_732324506_py81.jpg, id=94, 361.35pt x 239.9364pt
+>
 File: ./figures/frames_il_fullxfull_732324506_py81.jpg Graphic file (type jpg)
  <use ./figures/frames_il_fullxfull_732324506_py81.jpg>
 Package pdftex.def Info: ./figures/frames_il_fullxfull_732324506_py81.jpg used 
-on input line 287.
+on input line 256.
 (pdftex.def)             Requested size: 135.89174pt x 90.2322pt.
 
-<./figures/frames_saliency.png, id=123, 1060.96375pt x 702.625pt>
+<./figures/frames_saliency.png, id=95, 1060.96375pt x 702.625pt>
 File: ./figures/frames_saliency.png Graphic file (type png)
 
 <use ./figures/frames_saliency.png>
-Package pdftex.def Info: ./figures/frames_saliency.png used on input line 290.
+Package pdftex.def Info: ./figures/frames_saliency.png used on input line 259.
 (pdftex.def)             Requested size: 135.89174pt x 89.99358pt.
 
-<./figures/frames_rot.png, id=124, 703.62875pt x 702.625pt>
+<./figures/frames_rot.png, id=96, 703.62875pt x 702.625pt>
 File: ./figures/frames_rot.png Graphic file (type png)
 
 <use ./figures/frames_rot.png>
-Package pdftex.def Info: ./figures/frames_rot.png used on input line 293.
+Package pdftex.def Info: ./figures/frames_rot.png used on input line 262.
 (pdftex.def)             Requested size: 90.5922pt x 90.45459pt.
- [3 <./figures/dress_il_fullxfull_927681771_b525.jpg> <./figures/dress_sed.png>
- <./figures/flowers_il_fullxfull_719383783_7d69.jpg> <./figures/flowers_sed.png
->]
+ [2] [3 <./figures/dress_il_fullxfull_927681771_b525.jpg> <./figures/dress_sed.
+png> <./figures/flowers_il_fullxfull_719383783_7d69.jpg> <./figures/flowers_sed
+.png>]
 <./figures/purse_il_fullxfull_528061813_4lgo.jpg, id=147, 512.314pt x 369.7815p
 t>
 File: ./figures/purse_il_fullxfull_528061813_4lgo.jpg Graphic file (type jpg)
  <use ./figures/purse_il_fullxfull_528061813_4lgo.jpg>
 Package pdftex.def Info: ./figures/purse_il_fullxfull_528061813_4lgo.jpg used o
-n input line 318.
+n input line 295.
 (pdftex.def)             Requested size: 135.89174pt x 98.0819pt.
 
 <./figures/purse_lbp.png, id=148, 975.645pt x 702.625pt>
 File: ./figures/purse_lbp.png Graphic file (type png)
 
 <use ./figures/purse_lbp.png>
-Package pdftex.def Info: ./figures/purse_lbp.png used on input line 321.
+Package pdftex.def Info: ./figures/purse_lbp.png used on input line 298.
 (pdftex.def)             Requested size: 135.89174pt x 97.86293pt.
 
 <./figures/purse_db10.png, id=149, 974.64125pt x 701.62125pt>
 File: ./figures/purse_db10.png Graphic file (type png)
 
 <use ./figures/purse_db10.png>
-Package pdftex.def Info: ./figures/purse_db10.png used on input line 326.
+Package pdftex.def Info: ./figures/purse_db10.png used on input line 303.
 (pdftex.def)             Requested size: 135.89174pt x 97.81947pt.
 
 <./figures/purse_db11.png, id=150, 973.6375pt x 701.62125pt>
 File: ./figures/purse_db11.png Graphic file (type png)
 
 <use ./figures/purse_db11.png>
-Package pdftex.def Info: ./figures/purse_db11.png used on input line 326.
+Package pdftex.def Info: ./figures/purse_db11.png used on input line 303.
 (pdftex.def)             Requested size: 135.89174pt x 97.92653pt.
 
 <./figures/purse_db12.png, id=151, 974.64125pt x 703.62875pt>
 File: ./figures/purse_db12.png Graphic file (type png)
 
 <use ./figures/purse_db12.png>
-Package pdftex.def Info: ./figures/purse_db12.png used on input line 326.
+Package pdftex.def Info: ./figures/purse_db12.png used on input line 303.
 (pdftex.def)             Requested size: 135.89174pt x 98.09937pt.
 
-Overfull \hbox (13.96182pt too wide) detected at line 342
+Overfull \hbox (13.96182pt too wide) detected at line 319
 []\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = [] [] [] \OML/cmm/m/it/10 l\OT1/cmr/m/n/
 10 (\OML/cmm/m/it/10 m; n\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 :
  []
@@ -1184,7 +1174,7 @@ Overfull \hbox (13.96182pt too wide) detected at line 342
 File: ./figures/spoons_il_fullxfull_661851396_jppy.jpg Graphic file (type jpg)
  <use ./figures/spoons_il_fullxfull_661851396_jppy.jpg>
 Package pdftex.def Info: ./figures/spoons_il_fullxfull_661851396_jppy.jpg used 
-on input line 376.
+on input line 335.
 (pdftex.def)             Requested size: 135.89174pt x 90.41278pt.
 
 <./figures/spoons_laplacian_low_dof.png, id=161, 322.20375pt x 211.79124pt>
@@ -1192,7 +1182,7 @@ File: ./figures/spoons_laplacian_low_dof.png Graphic file (type png)
 
 <use ./figures/spoons_laplacian_low_dof.png>
 Package pdftex.def Info: ./figures/spoons_laplacian_low_dof.png used on input l
-ine 379.
+ine 338.
 (pdftex.def)             Requested size: 137.70262pt x 90.51907pt.
 
 <./figures/spoons_laplacian_low_dof_swd.png, id=162, 321.2pt x 213.79875pt>
@@ -1200,14 +1190,14 @@ File: ./figures/spoons_laplacian_low_dof_swd.png Graphic file (type png)
 
 <use ./figures/spoons_laplacian_low_dof_swd.png>
 Package pdftex.def Info: ./figures/spoons_laplacian_low_dof_swd.png used on inp
-ut line 382.
+ut line 341.
 (pdftex.def)             Requested size: 135.89174pt x 90.45384pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4] [5 <./figures/frames_il_fullxfull_732324506_py81.jpg> <./figures/frames_sal
-iency.png> <./figures/frames_rot.png> <./figures/purse_il_fullxfull_528061813_4
+[4 <./figures/frames_il_fullxfull_732324506_py81.jpg> <./figures/frames_salienc
+y.png> <./figures/frames_rot.png>] [5 <./figures/purse_il_fullxfull_528061813_4
 lgo.jpg> <./figures/purse_lbp.png> <./figures/purse_db10.png> <./figures/purse_
 db11.png> <./figures/purse_db12.png> <./figures/spoons_il_fullxfull_661851396_j
 ppy.jpg> <./figures/spoons_laplacian_low_dof.png> <./figures/spoons_laplacian_l
@@ -1215,7 +1205,7 @@ ow_dof_swd.png>] (./icpr2016-etsy.bbl (./icpr2016-etsy.brf)
 \tf@brf=\write3
 \openout3 = `icpr2016-etsy.brf'.
 
- [6])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1227,30 +1217,28 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
-[7
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
+[6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
  (./icpr2016-etsy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
 Package rerunfilecheck Info: File `icpr2016-etsy.brf' has not changed.
-(rerunfilecheck)             Checksum: B6AE695FE1A83D308039F9BD8FAC73BC;2720.
+(rerunfilecheck)             Checksum: 0085EC458A54E5839994FE143EF02C10;2827.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 477.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 421.
  ) 
 Here is how much of TeX's memory you used:
- 10700 strings out of 494185
- 161544 string characters out of 6156887
- 268701 words of memory out of 5000000
+ 10698 strings out of 494185
+ 161489 string characters out of 6156887
+ 264670 words of memory out of 5000000
  13724 multiletter control sequences out of 15000+600000
- 116774 words of font info for 135 fonts, out of 8000000 for 9000
+ 117082 words of font info for 136 fonts, out of 8000000 for 9000
  433 hyphenation exceptions out of 8191
- 36i,11n,38p,937b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,11n,38p,937b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/local/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</opt/local/share
 /texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx7.pfb></opt/local/share/texmf
 -texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/local/share/texmf-texl
@@ -1265,10 +1253,10 @@ fb></opt/local/share/texmf-texlive/fonts/type1/urw/times/utmb8a.pfb></opt/local
 /share/texmf-texlive/fonts/type1/urw/times/utmbi8a.pfb></opt/local/share/texmf-
 texlive/fonts/type1/urw/times/utmr8a.pfb></opt/local/share/texmf-texlive/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on icpr2016-etsy.pdf (7 pages, 3334035 bytes).
+Output written on icpr2016-etsy.pdf (6 pages, 3333683 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
- 233 compressed objects within 3 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 297 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

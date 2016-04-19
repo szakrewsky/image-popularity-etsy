@@ -134,27 +134,14 @@ Ali Shokoufandeh\\
 \begin{abstract}
 %\boldmath
 Online retail is a visual experience- Shoppers often use images as the first
- order information to decide if an item matches their taste. 
+ order information to decide if an item matches their personal style. 
  Image characteristics such as color, scene composition, texture, style, 
  aesthetics and overall quality play a crucial role in
   making a purchase decision, clicking on or liking a product listing. In this paper we use a set of image features that indicate quality
    to predict product listings popularity on a major e-commerce website, Etsy~\footlabel{etsyurl}{\url{www.etsy.com}}.
-   We first define listing popularity through search clicks, favoriting and purchase activity. Next, we infer listing quality from the pixel-level information of listed images as quality features. We then compare our findings to text-only models for popularity prediction. Our initial results indicate that a combined image and text modeling of product listings on Etsy outperforms text-only models in popularity prediction.
+   We first define listing popularity through search clicks, favoriting and purchase activity. Next, we infer listing quality from the pixel-level information of listed images as quality features. We then compare our findings to text-only models for popularity prediction. Our initial results indicate that a combined image and text modeling of product listings outperforms text-only models in popularity prediction.
 \end{abstract}
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the conference you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals/conferences frown on
-% math in the abstract anyway.
 
-% no keywords
-
-
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
 \ifCLASSOPTIONpeerreview
  \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
  \fi
@@ -170,12 +157,12 @@ The informative presentation of product listings through text and
 images is the foundation of modern e-commerce. Shoppers often have a 
 specific style or visual preference for many of the available items such as jewelry, clothing, home decor, etc. 
 Images provide the first order information for product listings. 
-Users usually use images in combination with other data modalities such as textual description, price, ratings and \etc to decide if an item is a suitable match for what they need and have in mind. The selection of proper high quality images is then an important step in listing a successful product. In this paper we examine the role of image quality in a listing popularity on a major e-commerce website, Etsy~\footref{etsyurl}.
+Users often use images in combination with other data modalities such as textual description, price, ratings and \etc to decide if an item is a suitable match for what they need and have in mind. The selection of proper high quality images is then an important step in listing a successful product. In this paper we examine the role of image quality in listing popularity on a major e-commerce website, Etsy~\footref{etsyurl}.
 
 
 
 Etsy is an online marketplace for artisans selling unique handcrafted goods, and vintage wares that
-couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in an e-commerce setting. Each Etsy listing is composed of text information such as title, tags, item description, shop and seller name and complementary images. For a product listing to stand out, high-quality images describing the content of the product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. 
+couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite{Anderson:2006,aryafar2014exploring}. With more than one million sellers, $35$ million unique product listings and nearly a hundred million images, Etsy is uniquely positioned to answer some inetersting questions about the role of images as a rich visual experience in e-commerce settings. Each Etsy listing is composed of text information such as title, tags, item description, shop and seller name and complementary images. For a product listing to stand out, high-quality images describing the content of the product listing is a necessity~\cite{wang2011aesthetics,obrador2009role}. Figure~\ref{fig:etsylistings} illustrates some Etsy images with different scene composition, lighting and image quality. 
 
 
 \begin{figure}
@@ -207,36 +194,25 @@ couldn't be found elsewhere. Etsy caters to the long tail of online retail~\cite
 \end{figure}
 
 
-In this paper we introduce a mechanism for product listings popularity prediction from the images representing those listings. We then explore the correlation between listings' popularity and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into an alternative mechanism for interaction, the ``favorite.'' Favorites on Etsy are similar to any number of ``like'' mechanisms available online, the most familiar of which is Facebook's ubiquitous ``thumbs-up.'' By considering what users explicitly express interest in, we are able to form relationships between user preferences and popularity-based image features. 
- 
-The remainder of the paper is organized as follows:
-Section~\ref{sec:background} discusses background on predicting image popularity.
-Section~\ref{sec:features} describes the features we used to predict populartiy.  We examine the
-performance of popularity features in predicting favorite listings classification in
-section~\ref{sec:classification}. Finally, we conclude this paper in
-section~\ref{sec:conclusion} and propose future research directions.
+In this paper we introduce a mechanism for product listings popularity prediction from the images representing those listings. We then explore the correlation between image quality and user interaction with what is for sale. Because sales are rare in comparison to the number of items available on a large site such as Etsy, we look into a combination of mechanisms for interaction, including the number of favorites, purchases and clicks on items to define item popularity. Favorites indicate an interest in an item and are similar to liking mechanism on other websites such as thumbs-up on facebook.
 
-
-\section{Background}
-\label{sec:background}
 Early work in the literature has defined popularity as quality~\cite{ke2006design} or aesthetics~\cite{datta2006studying} and use data from photography rating websites where users who have interest in photography upload their photos and rate others.  Popularity has also been defined as memorability~\cite{isola2011makes}, and interestingness~\cite{dhar2011high,gygli2013interestingness}.  More recent work has directly tackled popularity.  In \cite{khosla2014makes}, popularity is defined as the number of views on Flickr, and \cite{aryafar2014exploring} uses favorited listings on Etsy.
 
 Popularity tends to be predicted using SVM classification or regression \cite{datta2006studying} \cite{khosla2014makes} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Datta et. al. \cite{datta2006studying} uses a two class SVM classifier with a forward selection algorithm to find good feature sets.  By using elastic net to rank feature relevance to aesthetics, and a best first algorithm to find feature sets that minimize the RMSE cross validation error, \cite{wang2015automatic} are able to achieve a 30.1\% improvement compared to \cite{chen2014aesthetic}.  A few have explored other machine learning techniques.  In \cite{ke2006design} a naive Bayes classifier is used, not SVM.  Aryafar et. al \cite{aryafar2014exploring} studied the significance of color in favorited listings on Etsy using logistic regression, perceptron, passive aggressive and margin infused relaxed algorithms.
 
 The features used in popularity prediction model the same qualities professional photographers use such as light, color, rule of thirds, texture, smoothness, blurriness, depth of field, scene composition \cite{ke2006design} \cite{datta2006studying} \cite{chen2014aesthetic} \cite{wang2015automatic}.  Most of these features are unsupervised, but some such as the spacial edge distribution and color distribution features of \cite{ke2006design} require all of the labeled training data.  Some recent work has looked at semantic object features.  \cite{khosla2014makes} used the popular CNN ImageNet to detect the presence of 1000 difference object categories in the image.  The presence/absence of these categories is used as the feature.
 
-With more than 30 million active listings and over 90 million listing images, Etsy provides a unique visually enticing experience
-for users. Because images are uploaded by users of the site,
-representing the myriad items for sale, these images are composed of different items, presented with various
-lighting conditions, scene geometries and background selections. One of
-the key components of e-commerce websites is
-efficient image search and color filtering methods. Presence of occluded backgrounds and highly
-textured material can hinder the accuracy of color detection
-algorithms.  In our work, we define popularity as listings that have been favorited, clicked on, or purchased, and we show that unsupervised image popularity features are statistically significant when combined with traditional text meta-data features in predicting popularity.
+ 
+The remainder of the paper is organized as follows:
+Section~\ref{sec:features} describes the image quality feature vectors.  We examine the
+performance of image quality features in predicting listing popularity in
+section~\ref{sec:experiments}. Finally, we conclude this paper in
+section~\ref{sec:conclusion} and propose future research directions.
+
 
 \section{Features}
 \label{sec:features}
-The quality features extracted from images are composed of a set of hand-crafted features. The implementation of this features is made publicly available~\footnote{We make our feature extraction pipeline for image quality features available at: \url{https://github.com/szakrewsky/quality-feature-extraction}}. 
+The quality features extracted from images are composed of a set of hand-crafted features. The implementation of this features is made publicly available~\footnote{We make our feature extraction pipeline for image quality features available at:\\ \url{https://github.com/szakrewsky/quality-feature-extraction}}. 
 
   \subsection{Simplicity}
   High quality photos are typically simpler than others.  They often have one subject placed deliberately in the frame.  Sometimes the background is out of focus to emphasize the subject.  Poor quality photographs tend to have cluttered backgrounds and it may be difficult to distinguish the subject of the scene.  We used the four measures of simplicity from \cite{ke2006design}, spatial edge distribution, hue count, contrast and lightness, and blur.
@@ -262,6 +238,7 @@ The quality features extracted from images are composed of a set of hand-crafted
   \label{fig:sed}
 \end{figure*}
 
+
   \subsubsection{Hue Count}
   Professional photographs look more colorful and vibrant, but actually tend to have less distinct hues because cluttered scenes contain many heterogeneous objects.  We use a hue count feature by filtering an image in HSV color space such that V is in the range of [0.15, 0.95] and S is greater than 0.2.  A 20 bin histogram is computed on the remaining H values.  Let $m$ be the maximum value of the histogram and let $N = \{i | H(i) > \alpha m\}$, be the set of bins values greater than $\alpha m$.  The quality feature $f = 20 - ||N||$ is 0 when there are a many different hues and larger as the number of distinct hues in the image goes down.  We used $alpha = 0.05$ as in \cite{ke2006design}.
 
@@ -272,15 +249,7 @@ The quality features extracted from images are composed of a set of hand-crafted
   Blurry images are almost always considered to be of poor quality.  We use the blur features of \cite{ke2006design} and \cite{tong2004blur}.  In \cite{ke2006design} blur is modeled as $I_b = G_\sigma * I$ where $I_b$ is the result of convolving a Gaussian filter with an image.  The larger the $\sigma$ the more high frequencies are removed from the image.  Assuming the frequency distribution of all $I$ is approximately the same, then the maximum frequency $||C||$ can be estimated as $C = \{(u, v)\ |\ ||FFT(I_b)|| > \Theta\}$.  The feature is $f = ||C|| \sim 1/\sigma$, after normalizing by the image size.
 
   In \cite{tong2004blur}, blur estimation is done based on changes in the edge structures.  The blur operation will cause gradual edges to lose sharpness.  Assuming that most images have gradual edges that are sharp enough, the blur is measured as the ratio of gradual edges that have lost their sharpness.
-
-  \subsection{Rule of Thirds}
-  The rule of thirds is an important composition technique.  Thirds lines are the horizontal and vertical lines that divide an image into a 3x3 grid of equal sized cells.  The rule of thirds states that subjects placed along these lines are aesthetically more pleasing and more natural than subjects centered in the photograph.  In order to segment the subject of the image from the background, we use the Spectral Residual saliency detection algorithm \cite{hou2007saliency}.  The feature is a 5x5 map where each cell is the average saliency value \cite{mai2011rule}.  Let $w_p$ be the saliency value of the pixel and $A(W_i)$ is the area of the cell, then the value of each cell is
-  \begin{equation}
-    w_i = {\sum_{p \in W_i} w_p \over A(W_i)} .
-  \end{equation}
-  To compute the feature, the image is divided into a 5x5 grid with emphasis on the thirds lines; the horizontal and vertical regions centered on the thirds lines are 1/6 of the image size.  Figure \ref{fig:rot} shows the saliecy detection with the 5x5 grid overlay, and the thirds map feature for an image.
-
-\begin{figure*}
+\begin{figure*}[t!]
   \centering
   \subfigure[]{
     \includegraphics[width=0.3\textwidth]{./figures/frames_il_fullxfull_732324506_py81.jpg}
@@ -296,6 +265,14 @@ The quality features extracted from images are composed of a set of hand-crafted
   }
   \label{fig:rot}
 \end{figure*}
+  \subsection{Rule of Thirds}
+  The rule of thirds is an important composition technique.  Thirds lines are the horizontal and vertical lines that divide an image into a 3x3 grid of equal sized cells.  The rule of thirds states that subjects placed along these lines are aesthetically more pleasing and more natural than subjects centered in the photograph.  In order to segment the subject of the image from the background, we use the Spectral Residual saliency detection algorithm \cite{hou2007saliency}.  The feature is a 5x5 map where each cell is the average saliency value \cite{mai2011rule}.  Let $w_p$ be the saliency value of the pixel and $A(W_i)$ is the area of the cell, then the value of each cell is
+  \begin{equation}
+    w_i = {\sum_{p \in W_i} w_p \over A(W_i)} .
+  \end{equation}
+  To compute the feature, the image is divided into a 5x5 grid with emphasis on the thirds lines; the horizontal and vertical regions centered on the thirds lines are 1/6 of the image size.  Figure \ref{fig:rot} shows the saliecy detection with the 5x5 grid overlay, and the thirds map feature for an image.
+
+
 
   \subsection{Texture}
   A smooth image may indicate blur or out-of-focus, and the lack of which may indicate poor film, or too high an ISO setting.  In contrast, texture in the scene is an important composition skill of a photographer.  Smoothness may indicate the lack of texture.  Texture and smoothness are some of the most statically correlated features for quality/popularity \cite{wang2015automatic} and \cite{khosla2014makes}.  We use three smoothness/texture features from these.
@@ -347,27 +324,9 @@ The quality features extracted from images are composed of a set of hand-crafted
  
 \section{Popularity Prediction}
 \label{sec:experiments}
-Once we have extracted all the quality features
-
-Once an item is listed on Etsy, the
-users can favorite a listing which allows them to bring all the items
-they like in one place. We first examine the listings dominant colors
-to predict if a listings is likely to be favorited or not. Then we
-explore the entropy of dominant colors among users favorites to
-indicate the color variations among favorited listings.
- Two datasets are used for
-classification of favorited listings and color entropy
-experiments. The classification dataset consists of $2.73$ million unique
-listings that have been created within the last month on Etsy. The
-listings images are tagged with the top three dominant colors and
-labeled as positive if they have been favorited by a user in that period. 
-To collect the entropy dataset, a set of $11235$ active users with more
-than $20$ and less than $2000$ favorited listings within the past six
-months are selected. The entropy dataset then consists of $2.32$ million unique listings that candidate
-users have favorited over the last 6 months on Etsy. These listings
-images are also tagged with top three dominant colors. These two
-datasets contain more than $5.05$ million listing images and dominant
-color tags and are available through Etsy's API\footnote{\url{www.etsy.com/developers}}.
+We collect a set of images from Etsy through Etsy's API\footnote{\url{www.etsy.com/developers}} for quality prediction.
+Our dataset consists of $50,000$ Etsy listing images. Each Etsy listing has at least one photo and can have up to five photos to show different angles and details. In our expeiments we only extract the first (main) listing image which shows up in search results and is featured as the main image on the listing page. We denote the number of favorites for each listing, $L$ with main image $I$ as $F(L_I)$, the number of purchases with $P(L_I)$ and number of clicks with $C(L_I)$. We associate each listing image with it's popularity score as :
+$$Popularity(L_I) = \sum F(L_I) + C(L_I) + P(L_I).$$
 
 \begin{figure*}
   \centering
@@ -413,57 +372,42 @@ Feature & Dimension \\ \hline
 \caption{Feature Dimensions}
 \end{table}
 
-\subsection{Classification}
-\label{sec:classification}
 \begin{table}[h!]
-   \label{tab:classification accuracy}
+   \label{tab:results}
+   \caption{Lift in accuracy rate using a logistic regression, relative to text-only baseline ($\%$), on the sample dataset is shown in image-only and multimodal settings.}
     \begin{center}
-\begin{tabular}{|c||c|c|} 
+\begin{tabular}{|c||c|c|c|} 
 \hline
-Classification method&Average accuracy rate& AUC\\
+Modality&Image&Image+Text (MM)\\
 \hline
  \hline
-logistic regression& $0.5512$ & $0.5694$\\ \hline
-perceptron&$\mathbf{0.5600}$&$\mathbf{0.5906}$\\ \hline
-passive aggressive&$0.5329$& $0.5240$\\ \hline
-MIRA&$0.5232$&$0.5240$\\ \hline
- \hline
+Relative lift in AUC& $+1.07\%$ &$+\mathbf{3.45}\%$\\ \hline
  \end{tabular}
+ \label{tab:results}
    \end{center}
-\caption{Average classification accuracy rate lift are reported
-     using text features and multimodal feature vectors.}
-  \label{tab:classification accuracy}
 \end{table}
 
-Once the classification dataset has been tagged with top three
-dominant colors, we extract textual information from the
-listings. These textual features consist of the tokenized listings
+
+\newcommand{\tuple}[1]{\ensuremath{\left \langle #1 \right \rangle }}
+
+
+We extract the quality feature vectors as described in Section~\ref{sec:features} for each listing image and denote that with $q(L_I)$ for listing $L$ and image $I$. Once the dataset has been tagged with these quality features, we extract textual information from the
+listing as $t(L_I)$. These textual features consist of the tokenized listings
 titles unigrams and bigrams and tokenized listings
-tags unigrams. We then represent each listing with a feature vector including textual features
-and color unigrams. A binary classification is then performed to
-predict if the test listings are favorited by
-users. We report the average classification accuracy rate and the area
-under the curve (AUC) with four different classifiers. Logistic
-regression, passive-agressive classifier, perceptron and margin
-infused relaxed algorithm (MIRA) are used as the learning models.
-Table~\ref{tab:classification accuracy} shows the results
-of four rounds of 5-fold classification on this dataset. 
-The textual information and color unigrams do not indicate a strong
-improvement in favoriting behaviour prediction. It will be interesting
-to observe the effects of image quality, memorability, aesthetics and
-interestingness for the similar problem on this unique dataset.
+tags unigrams and serve as the single modality listing representation. The multimodal feature vector representation, $MM(L_I)$ is obtained by concatenating quality and textual features as a single feature vector, i.e., $MM(L_I) = \tuple{q(L_I),t(L_I)}$. 
+
+We then use a logistic regression against popularity scores, $Popularity(L_I)$ 
+and report the accuracy lift using images and multimodal feature vectors. Table~\ref{tab:results} shows these results. We can observe that the quality features in combination with textual features can increase the prediction accuracy on the collected dataset.  
+
 
 \section{conclusion}
 \label{sec:conclusion}
-This works represents a initial study on understanding how images,
-specifically color-based image features, can be used to represent
-items in an e-commerce setting, thereby providing better user
+This works presents an initial study on understanding how image quality
+can impact the popularity of items in e-commerce settings, thereby providing better user
 understanding and a better overall shopping experience. To facilitate
-this understanding, this work proposed an  empirical method to
-estimate the dominant colors of images representing product listings
-on Etsy, using object localization. 
-
-We used this dominant colors to filter listings in a conventional text-based e-commerce search, according to user input. Moreover we explored the color distribution among candidate users favorited listings. We also examined the impact of color unigrams on users favoriting behaviour. This work represents the tip of the iceberg of understanding how visual cues influence user action in an e-commerce setting. 
+this understanding, this work proposed an empirical method to
+estimate the image quality features representing product listings
+on Etsy. These feature vectors were combined with traditional textual features to serve as the multimodal item representation. We compared the efficiency of single modality (text-only and image-only) features to multimodal feature vectors in popularity prediction. Our initial results indicate that quality features in combination with text information can increase the prediction accuracy for a sample dataset.
 
 \bibliographystyle{IEEEtran}
 % argument is your BibTeX string definitions and bibliography database(s)
